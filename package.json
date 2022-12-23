@@ -1,0 +1,59 @@
+{
+	"name": "extjs_iconpack",
+	"ext-name": "extjs_iconpack",
+	"SenchaExtName": "extjs_iconpack",
+	"version": "1.0.0",
+	"description": "package to add icons",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"version": "echo version"
+	},
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@gitlab-dbr.sigma-it.local:2022/dbr/extjs_iconpack.git"
+	},
+	"keywords": [
+		"iconpack",
+		"sigma"
+	],
+	"author": "Sigma",
+	"license": "ISC",
+	"sencha": {
+		"name": "extjs_iconpack",
+		"namespace": "Sigma",
+		"type": "code",
+		"framework": "ext",
+		"toolkit": "classic",
+		"theme": "theme-neptune",
+		"creator": "Sigma",
+		"summary": "Package wrapper for iconpack",
+		"detailedDescription": "",
+		"version": "1.0.0",
+		"compatVersion": "5.15.4",
+		"format": "1",
+		"output": "${framework.dir}/build/packages/${package.name}",
+		"local": true,
+		"resource": {
+			"paths": ""
+		},
+		"resources": [
+			{
+				"path": "${package.dir}/resources",
+				"output": "shared"
+			}
+		],
+		"sass": {
+			"namespace": "Ext",
+			"etc": "${package.dir}/sass/etc/all.scss",
+			"var": "${package.dir}/sass/var",
+			"src": [
+				"${package.dir}/sass/src",
+				"${package.dir}/sass/src/all.scss"
+			]
+		},
+		"classpath": "${package.dir}/src",
+		"overrides": "${package.dir}/overrides",
+		"slicer": null
+	}
+}

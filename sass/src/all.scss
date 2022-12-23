@@ -1,0 +1,383 @@
+$fa-font-path: get-resource-path('images/icon', 'shared');
+
+$icon-list: (
+	account-circle: "account-circle",
+	add-chart: "add-chart",
+	accounts-receivable-report: "accounts-receivable-report",
+	accruals: "accruals",
+	add-plus-box: "add-plus-box",
+	apps: "apps",
+	archive-download: "archive-download",
+	add: "add",
+	assignment-late: "assignment-late",
+	attach-email: "attach-email",
+	attach-file: "attach-file",
+	attachment: "attachment",
+	automated-data-lineage: "automated-data-lineage",
+	back-hand: "back-hand",
+	bankruptcy-2: "bankruptcy-2",
+	bar-chart: "bar-chart",
+	block: "block",
+	box: "box",
+	build: "build",
+	business: "business",
+	business-rule-task: "business-rule-task",
+	calendar-month: "calendar-month",
+	calendar-today: "calendar-today",
+	change-circle: "change-circle",
+	chat-bubble: "chat-bubble",
+	check-circle: "check-circle",
+	check: "check",
+	clip-action: "clip-action",
+	chevron-right: "chevron-right",
+	comment: "comment",
+	contact-page: "contact-page",
+	comment: "comment",
+	comment: "comment",
+	comment: "comment",
+	comment: "comment",
+	comment: "comment",
+	answer-final: "answer-final",
+	answer-intermediate: "answer-intermediate",
+	answer-simple: "answer-simple",
+	archive: "archive",
+	arroba-symbol: "arroba-symbol",
+	arrow-down-long: "arrow-down-long",
+	arrow-up-long: "arrow-up-long",
+	attention-critical: "attention-critical",
+	attention: "attention",
+	book: "book",
+	branch: "branch",
+	building: "building",
+	calculator: "calculator",
+	calendar: "calendar",
+	call: "call",
+	cancel-call: "cancel-call",
+	cancel-small: "cancel-small",
+	chat: "chat",
+	checkbox-checked: "checkbox-checked",
+	checkbox: "checkbox",
+	clip: "clip",
+	close: "cancel",
+	cancel: "cancel",
+	collapse-top: "arrow-up",
+	commercial-accounting: "commercial-accounting",
+	conditioner2: "conditioner2",
+	conditioner: "conditioner",
+	consignee: "consignee",
+	contact-itp: "contact-itp",
+	contact-object: "contact-object",
+	contact-section: "contact-section",
+	contract-small: "contract-small",
+	contract2: "contract2",
+	contract: "contract",
+	contragent: "contragent",
+	copy-link: "copy-link",
+	copy: "copy",
+	create-file: "create-file",
+	cup: "cup",
+	cutlery: "cutlery",
+	data-loading: "data-loading",
+	diagram2: "diagram2",
+	directory: "directory",
+	doc: "doc",
+	down-arrow: "down-arrow",
+	download: "download",
+	edit-connection: "edit-connection",
+	edit-user: "edit-user",
+	edit: "edit",
+	email: "email",
+	enlarge: "enlarge",
+	executor: "executor",
+	exel: "exel",
+	exit: "exit",
+	expand-bottom: "arrow-down",
+	expand: "expand",
+	facebook: "facebook",
+	fax: "fax",
+	filter: "filter",
+	financial-transfer: "financial-transfer",
+	flow-chart: "flow-chart",
+	growth: "growth",
+	hand: "hand",
+	handshake-small: "handshake-small",
+	handshake: "handshake",
+	heat-supply-contract: "heat-supply-contract",
+	help: "help",
+	hot-water: "hot-water",
+	implementation: "implementation",
+	increase: "increase",
+	information: "information",
+	inset: "inset",
+	internet-reception: "internet-reception",
+	internet-shop: "internet-shop",
+	itp: "itp",
+	kit: "kit",
+	latch: "latch",
+	link: "link",
+	list: "list",
+	loading-payment-register: "loading-payment-register",
+	logout: "logout",
+	magnifying-glass: "magnifying-glass",
+	marketing-campaigns: "marketing-campaigns",
+	maximize: "maximize",
+	megaphone-small: "megaphone-small",
+	megaphone: "megaphone",
+	menu-close: "menu-close",
+	menu-open: "menu-open",
+	star-16: 'star_16px',
+	star: 'star',
+	edit-view: "edit-view",
+	save-view: "save-view",
+	menu: "menu",
+	message-none: "message-none",
+	message: "message",
+	messenger: "messenger",
+	meter-set: "meter-set",
+	meter2: "meter2",
+	meter: "meter",
+	minimize: "minimize",
+	minimum-order: "minimum-order",
+	nav-arrow-left: "nav-arrow-left",
+	nav-arrow-right: "nav-arrow-right",
+	new-credential: "new-credential",
+	new-news: "new-news",
+	new-tasks: "new-tasks",
+	news: "news",
+	office: "office",
+	open: "open",
+	order-small: "order-small",
+	order: "order",
+	other-operations: "other-operations",
+	otp2: "otp2",
+	otp: "otp",
+	package-line-service: "package-line-service",
+	package-line: "package-line",
+	package: "package",
+	payer: "payer",
+	personal-area2: "personal-area2",
+	personal-area: "personal-area",
+	phone: "phone",
+	pipeline-small: "pipeline-small",
+	pipeline: "pipeline",
+	planned-restrictions-schedule: "planned-restrictions-schedule",
+	plus: "plus",
+	post-office: "post-office",
+	pressure-meter: "pressure-meter",
+	price: "price",
+	print: "print",
+	printer: "printer",
+	product: "product",
+	products: "products",
+	question: "question",
+	radiator-small: "radiator-small",
+	radiator: "radiator",
+	receivables: "receivables",
+	reference-book: "reference-book",
+	register-payment-doc: "register-payment-doc",
+	registers-receivable-documents: "registers-receivable-documents",
+	reports: "reports",
+	rules: "rules",
+	sales-books: "sales-books",
+	save: "save",
+	scheme-treelis: "scheme-treelist",
+	section: "section",
+	sent: "sent",
+	service: "service",
+	services: "services",
+	set: "set",
+	settings: "settings",
+	sewerage: "sewerage",
+	share: "share",
+	shopper: "shopper",
+	shopping-cart: "shopping-cart",
+	social2: "social2",
+	social: "social",
+	source: "source",
+	speaking: "speaking",
+	station: "station",
+	status-active: "status-active",
+	status-answered: "status-answered",
+	status-close: "status-close",
+	status-new: "status-new",
+	status-refusing: "status-refusing",
+	status: "status",
+	subsidies: "subsidies",
+	tap-water: "tap-water",
+	target: "target",
+	tasks: "tasks",
+	temperature: "temperature",
+	thermal-chamber-corner-small: "thermal-chamber-corner-small",
+	thermal-chamber-small: "thermal-chamber-small",
+	thermal-chamber: "thermal-chamber",
+	time2: "time2",
+	time: "time",
+	toilet: "toilet",
+	tower2: "tower2",
+	tower: "tower",
+	undo: "undo",
+	update-arrows: "update-arrows",
+	update-small: "update-small",
+	user-in: "user-in",
+	user-out: "user-out",
+	user-small: "user-small",
+	user: "user",
+	uute-equipment: "uute-equipment",
+	uute-set: "uute-set",
+	uute2: "uute2",
+	uute: "uute",
+	vk: "vk",
+	work-payment-register: "work-payment-register",
+	work-receivables: "work-receivables",
+	workflow: "workflow",
+	data-loading: "data-loading",
+	calculator-building: "calculator-building",
+	calculator-contract: "calculator-contract",
+	climatic-conditions: "climatic-conditions",
+	entering-readings-uute: "entering-readings-uute",
+	connection-diagram: "connection-diagram",
+	ik: "ik",
+	steam: "steam",
+	user-account: "user-account",
+	create: "create",
+	balancing: "balancing",
+	recalculations: "recalculations",
+	climatic-conditions: "climatic-conditions",
+	correction-volume-uute: "correction-volume-uute",
+	correction-volume-ipu: "correction-volume-ipu",
+	correction-contract-conditions: "correction-contract-conditions",
+	edit-small: "edit-small",
+	work-thv: "work-thv",
+	done-all: "done-all",
+	not-done-all: "not-done-all",
+	not-done-all-2: "not-done-all-2",
+	done-all-2: "done-all-2"
+);
+
+@mixin svg-icon-mask($color) {
+  background-color: $color;
+}
+
+.svg-icon {
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  -webkit-mask-repeat: no-repeat !important;
+  -webkit-mask-position: center !important;
+  background-color: $base-color;
+  color: transparent;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.svg-icon-gray {
+  color: #aaaaaa !important;
+}
+
+.svg-icon-black {
+  color: black !important;
+}
+
+.svg-icon-white {
+  color: #ffffff !important;
+}
+
+.svg-icon-bg-gray {
+  background-color: #aaaaaa !important;
+}
+
+.svg-icon-bg-black {
+  background-color: black !important;
+}
+
+.svg-icon-bg-white {
+  background-color: #ffffff !important;
+}
+
+@each $key, $val in $icon-list {
+  $iconUrl: #{$fa-font-path}/#{$val}#{'.svg'};
+  .svg-icon-#{$key} {
+    // mask-image: theme-background-image(#{$val}, "svg") !important;
+    mask-image: url($iconUrl) !important;
+    -webkit-mask-image: url($iconUrl) !important;
+  }
+
+  .sigma .x-tool-#{$key} {
+    mask-image: url($iconUrl) !important;
+    -webkit-mask-image: url($iconUrl) !important;
+    background-color: white !important;
+
+    &:before {
+      content: "";
+    }
+  }
+
+  .x-edge {
+    &.sigma .x-tool-#{$key} {
+      background-color: inherit !important;
+    }
+
+    .svg-icon {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 75%;
+      background-color: inherit !important;
+
+      &.svg-icon-#{$key} {
+        background-image: url($iconUrl) !important;
+      }
+    }
+  }
+}
+
+.x-edge {
+  .svg-icon-add {
+    background-size: 100%;
+  }
+}
+
+.x-tool-tool-el {
+  width: 24px;
+  height: 24px;
+}
+
+.svg-icon {
+  &.svg-in-grid-cell {
+    width: 20px;
+    height: 20px;
+    background-color: $base-color;
+  }
+
+  &.x-tree-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.svg-icon-cancel-small {
+  background-color: #9e9e9e !important;
+}
+
+.svg-icon-magnifying-glass {
+  background-color: #9e9e9e !important;
+}
+
+.svg-icon-cancel-small::before {
+  content: "" !important;
+}
+
+.svg-icon.svg-icon-close {
+  background-color: $active-color-tec;
+}
+
+.svg-icon.svg-icon-edit {
+  background-color: $base-color-light;
+}
+
+.svg-icon.svg-icon-nav-arrow-left, .svg-icon.svg-icon-nav-arrow-right {
+  background-color: #608599;
+}
+
+.svg-icon.svg-icon-disabled {
+  background-color: #bbbbbb;
+  cursor: default;
+}
