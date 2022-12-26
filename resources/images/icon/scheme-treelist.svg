@@ -1,16 +1,27 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="5.5" r="4.5" stroke="black" stroke-width="2"/>
+<g clip-path="url(#clip0_871_44579)">
+<path d="M12 10C14.4853 10 16.5 7.98528 16.5 5.5C16.5 3.01472 14.4853 1 12 1C9.51472 1 7.5 3.01472 7.5 5.5C7.5 7.98528 9.51472 10 12 10Z" stroke="black" stroke-width="2"/>
 <path d="M10.5 13H20.5" stroke="black" stroke-width="2"/>
-<line x1="20" y1="17" x2="20" y2="12" stroke="black" stroke-width="2"/>
-<line x1="4" y1="17" x2="4" y2="12" stroke="black" stroke-width="2"/>
-<mask id="path-5-inside-1_53_247" fill="white">
-<rect x="16" y="15" width="8" height="9" rx="1"/>
+<path d="M20 17V12" stroke="black" stroke-width="2"/>
+<path d="M4 17V12" stroke="black" stroke-width="2"/>
+<mask id="mask0_871_44579" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="13" width="12" height="13">
+<path d="M23 15H17C16.4477 15 16 15.4477 16 16V23C16 23.5523 16.4477 24 17 24H23C23.5523 24 24 23.5523 24 23V16C24 15.4477 23.5523 15 23 15Z" stroke="black" stroke-width="4"/>
 </mask>
-<rect x="16" y="15" width="8" height="9" rx="1" stroke="black" stroke-width="4" mask="url(#path-5-inside-1_53_247)"/>
-<mask id="path-6-inside-2_53_247" fill="white">
-<rect y="15" width="8" height="9" rx="1"/>
+<g mask="url(#mask0_871_44579)">
+<path d="M22.25 16H17.75C17.3358 16 17 16.3482 17 16.7778V22.2222C17 22.6518 17.3358 23 17.75 23H22.25C22.6642 23 23 22.6518 23 22.2222V16.7778C23 16.3482 22.6642 16 22.25 16Z" stroke="black" stroke-width="2"/>
+</g>
+<mask id="mask1_871_44579" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-2" y="13" width="12" height="13">
+<path d="M7 15H1C0.447715 15 0 15.4477 0 16V23C0 23.5523 0.447715 24 1 24H7C7.55228 24 8 23.5523 8 23V16C8 15.4477 7.55228 15 7 15Z" stroke="black" stroke-width="4"/>
 </mask>
-<rect y="15" width="8" height="9" rx="1" stroke="black" stroke-width="4" mask="url(#path-6-inside-2_53_247)"/>
-<line x1="12" y1="13" x2="12" y2="10" stroke="black" stroke-width="2"/>
-<line x1="3.99121" y1="13" x2="11.0168" y2="13" stroke="black" stroke-width="2"/>
+<g mask="url(#mask1_871_44579)">
+<path d="M6.25 16H1.75C1.33579 16 1 16.3482 1 16.7778V22.2222C1 22.6518 1.33579 23 1.75 23H6.25C6.66421 23 7 22.6518 7 22.2222V16.7778C7 16.3482 6.66421 16 6.25 16Z" stroke="black" stroke-width="2"/>
+</g>
+<path d="M12 13V10" stroke="black" stroke-width="2"/>
+<path d="M3.99121 13H11.0168" stroke="black" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_871_44579">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
 </svg>
