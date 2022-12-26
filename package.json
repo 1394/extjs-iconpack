@@ -19,6 +19,10 @@
 	],
 	"author": "Sigma",
 	"license": "ISC",
+	"devDependencies": {
+		"eslint": "^8.30.0",
+		"eslint-config-google": "^0.14.0"
+	},
 	"sencha": {
 		"name": "extjs_iconpack",
 		"namespace": "Sigma",

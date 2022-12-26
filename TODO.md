@@ -1,2 +1,1 @@
-TODO: remake npm script to publish
-TODO:
+<!-- leave this file empty after development -->
