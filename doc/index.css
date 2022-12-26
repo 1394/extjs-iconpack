@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -7,6 +11,8 @@ body {
 
   font-family: 'Montserrat', sans-serif;
 }
+
+/*  */
 
 .icon_pack-wrapper {
   position: relative;
@@ -21,22 +27,39 @@ body {
   transform: translateY(-50%);
 }
 
+.search-wrapper {
+  margin: 16px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.search-wrapper .search-state {
+  right: 12px;
+  position: absolute;
+  display: block;
+  padding: 4px 10px;
+  border: 1px solid rgb(184, 180, 180);
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #dddddd;
+  text-align: center;
+  cursor: auto;
+}
+
 .search {
-  width: 240px;
+  position: relative;
+  width: 320px;
   padding: 12px 24px;
+  background-color: #e9e9e9;
+  transition: all .3s ease-in-out;
 
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 12px;
   outline: none;
 
   font-size: 16px;
   font-family: inherit;
-}
-
-.search {
-  margin: 16px;
-  background-color: #e9e9e9;
-  transition: all .3s ease-in-out;
 }
 
 .search:hover {
@@ -105,4 +128,10 @@ body {
 ::selection {
   color: rgb(71, 77, 80);
   background: rgb(226, 226, 226);
+}
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

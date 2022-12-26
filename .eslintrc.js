@@ -22,7 +22,7 @@ module.exports = {
       150
     ],
     'indent': [
-      'warning',
+      'error',
       2
     ],
 	'linebreak-style' : 'crlf',
