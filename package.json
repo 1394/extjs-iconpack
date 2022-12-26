@@ -6,8 +6,8 @@
 	"description": "package to add icons",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"version": "node doc/index.js"
+		"publish": "node doc/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
@@ -59,5 +59,6 @@
 		"classpath": "${package.dir}/src",
 		"overrides": "${package.dir}/overrides",
 		"slicer": null
-	}
+	},
+	"dependencies": {}
 }
