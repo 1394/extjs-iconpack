@@ -28,7 +28,7 @@ while (styles[tempIdxToReadStyles] !== ');') {
 
 // generate index.html file with icons
 const iconsImages = icons
-	.map((icon) => `\t\t\t<img src="../resources/images/icon/${icon}.svg" alt="${icon}">\r\n`)
+	.map((icon) => `\t\t\t<img src="../resources/images/icon/${icon}.svg" alt="${icon}">\r`)
 	.join('')
 
 fs.readFile('gen/index.html', 'utf8', function(err, data) {
@@ -37,10 +37,26 @@ fs.readFile('gen/index.html', 'utf8', function(err, data) {
   }
 
   const lines = data.split('\n')
-  const iconContainerIdx = lines.findIndex((line) => line.includes('icon-container'))
 
+  // imageIdx
+  const iconContainerIdx = lines.findIndex((line) => line.includes('icon-container'))
+  let imageIdx = iconContainerIdx + 1
+
+  // delete prev images container
+  while (!lines[imageIdx + 1].includes('</div>')) {
+    lines.splice(imageIdx, 1)
+  }
+  lines[imageIdx] = ''
+
+  // set icon images
   lines[iconContainerIdx + 1] = iconsImages
-  const result = lines.join('')
+  const result = lines
+	.map((line) => {
+		if (line !== '') {
+			return `${line}\n` 
+		} 
+	})
+	.join('')
 
   fs.writeFile('gen/index.html', result, 'utf8', function (err) {
      if (err) return console.log(err)
