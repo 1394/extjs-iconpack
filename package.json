@@ -6,7 +6,7 @@
 	"description": "package to add icons",
 	"main": "index.js",
 	"scripts": {
-		"publish": "node doc/index.js",
+        "version": "node doc/index.js && git add doc/index.html && npm version patch",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
