@@ -32,11 +32,6 @@ $icon-list: (
 	chevron-right: "chevron-right",
 	comment: "comment",
 	contact-page: "contact-page",
-	comment: "comment",
-	comment: "comment",
-	comment: "comment",
-	comment: "comment",
-	comment: "comment",
 	answer-final: "answer-final",
 	answer-intermediate: "answer-intermediate",
 	answer-simple: "answer-simple",
@@ -230,7 +225,6 @@ $icon-list: (
 	work-payment-register: "work-payment-register",
 	work-receivables: "work-receivables",
 	workflow: "workflow",
-	data-loading: "data-loading",
 	calculator-building: "calculator-building",
 	calculator-contract: "calculator-contract",
 	climatic-conditions: "climatic-conditions",
@@ -242,7 +236,6 @@ $icon-list: (
 	create: "create",
 	balancing: "balancing",
 	recalculations: "recalculations",
-	climatic-conditions: "climatic-conditions",
 	correction-volume-uute: "correction-volume-uute",
 	correction-volume-ipu: "correction-volume-ipu",
 	correction-contract-conditions: "correction-contract-conditions",
@@ -294,7 +287,8 @@ $icon-list: (
 }
 
 @each $key, $val in $icon-list {
-  $iconUrl: #{$fa-font-path}/#{$val}#{'.svg'};
+//   $iconUrl: #{$fa-font-path}/#{$val}#{'.svg'};
+  $iconUrl: #{'../resources/images/icon'}/#{$val}#{'.svg'};
   .svg-icon-#{$key} {
     // mask-image: theme-background-image(#{$val}, "svg") !important;
     mask-image: url($iconUrl) !important;
