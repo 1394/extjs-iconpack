@@ -6,7 +6,8 @@
 	"description": "package to add icons",
 	"main": "index.js",
 	"scripts": {
-        "version": "node doc/index.js && git add doc/index.html && npm version patch",
+		"update-docs": "node doc/index.js && git add doc/index.html",
+		"version": "npm run update-docs && npm version patch",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -21,7 +22,9 @@
 	"license": "ISC",
 	"devDependencies": {
 		"eslint": "^8.30.0",
-		"eslint-config-google": "^0.14.0"
+		"eslint-config-google": "^0.14.0",
+		"pug": "^3.0.2",
+		"sass": "^1.57.1"
 	},
 	"sencha": {
 		"name": "extjs_iconpack",

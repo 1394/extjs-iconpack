@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head 
+        title= IconPack
+        link(rel="stylesheet", href="./index.css")
+        link(rel="icon", href="../resources/images/icon/star_16px.svg")
+
+    body
+        div.icon_pack-wrapper
+
+            span.search-wrapper
+                input(type="text", class="search", placeholder="Search icon")
+
+                - var classes = ['search-state', 'prevent-select']
+                span(class=classes) /
+
+            ul.icon-container
+                mixin listItem(item)
+                    li
+                        img(src=item.source, alt=item.alt)
+                        p= item.name
+
+                each val, idx in listItems
+                    +listItem(val)
+
+        script(src='./search.js')

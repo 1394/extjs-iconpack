@@ -1,4 +1,5 @@
 const fs = require('fs');
+const pug = require('pug');
 
 // path to styles file
 const filename = './sass/src/all.scss';
@@ -17,54 +18,29 @@ const icons = [];
 let iconsIdx = 0;
 
 while (styles[tempIdxToReadStyles] !== ');') {
-    const iconName = styles[tempIdxToReadStyles].split(':')[1]
-        .replace(/['", ]+/g, '');
-
-    icons[iconsIdx] = iconName;
+    icons[iconsIdx] = styles[tempIdxToReadStyles];
 
     iconsIdx += 1;
     tempIdxToReadStyles += 1;
 }
 
-// generate index.html file with icons
-// remove repeated icons
-const iconsImages = [...new Set(icons)]
-    .sort()
-    .map((icon) => `\t\t\t<li><img src="${iconPath}/${icon}.svg" alt="${icon}"><p>${icon}</p></li>\r`)
-    .join('');
+// generate iconList to render pug layout
+const iconsList = icons.map((icon) => {
+    const name = icon.split(':')[0];
+    const svgFilename = icon.split(':')[1].replace(/['", ]+/g, '');
+    return {
+        source: `${iconPath}/${svgFilename}.svg`,
+        name,
+        alt: name,
+    };
+});
 
-fs.readFile('doc/index.html', 'utf8', function(err, data) {
+// generate html file
+const compiledFunction = pug.compileFile('doc/pug/index.pug');
+fs.writeFileSync('doc/index.html', compiledFunction({listItems: iconsList}), 'utf-8', function(err) {
     if (err) {
         return console.log(err);
-    }
-
-    const lines = data.split('\n');
-
-    // imageIdx
-    const iconContainerIdx = lines.findIndex((line) => line.includes('icon-container'));
-    const imageIdx = iconContainerIdx + 1;
-
-    // delete prev images container
-    while (!lines[imageIdx + 1].includes('</ul>')) {
-        lines.splice(imageIdx, 1);
-    }
-    lines[imageIdx] = '';
-
-    // set icon images
-    lines[iconContainerIdx + 1] = iconsImages;
-    const result = lines
-        .map((line) => {
-            if (line !== '') {
-                return `${line}\n`;
-            }
-        })
-        .join('');
-
-    fs.writeFile('doc/index.html', result, 'utf8', function(err) {
-        if (err) {
-            return console.log(err);
-        };
-    });
+    };
 });
 
 console.log('doc generated');
