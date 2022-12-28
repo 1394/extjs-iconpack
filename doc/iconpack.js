@@ -10,12 +10,10 @@ searchInput.addEventListener('input', (e) => {
         const item = iconList[i].querySelector('img');
         const searchValue = item.alt;
 
-        if (searchValue.toLowerCase().indexOf(filter) > -1) {
-            if (iconList[i].tagName.toLowerCase() === 'li') {
+        if (iconList[i].tagName.toLowerCase() === 'li') {
+            if (searchValue.toLowerCase().indexOf(filter) > -1) {
                 iconList[i].style.display = '';
-            }
-        } else {
-            if (iconList[i].tagName.toLowerCase() === 'li') {
+            } else {
                 iconList[i].style.display = 'none';
                 hiddenItemsCount += 1;
             }
@@ -64,4 +62,18 @@ searchInput.addEventListener('focus', () => {
 
 searchInput.addEventListener('blur', () => {
     document.querySelector('.search-state').textContent = '/';
+});
+
+iconContainer.addEventListener('click', (e) => {
+    if (e.target.className.includes('svg-icon')) {
+        const clsName = e.target.className;
+        const iconAlt = e.target.closest('li').querySelector('img').alt;
+        const iconCls = `.svg-icon .svg-icon-${iconAlt}`;
+        navigator.clipboard.writeText(iconCls);
+
+        e.target.className = 'svg-icon svg-icon-check';
+        setTimeout(() => {
+            e.target.className = clsName;
+        }, 1000);
+    }
 });

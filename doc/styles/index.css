@@ -76,24 +76,31 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   gap: 24px;
-  padding: 0 16px;
+  padding: 12px 16px 0 12px;
   grid-auto-rows: min-content;
 
   height: 90%;
   overflow-y: scroll;
+  transition: all .3s ease-in-out;
 }
 
 .icon-container li {
   display: grid;
-  grid-template-columns: 24px 1fr;
+  grid-template-columns: 24px 1fr 24px;
   align-items: center;
   gap: 16px;
 
-  padding-left: 16px;
+  padding: 0 24px 0 16px;
   background-color: white;
   border-radius: 16px;
+  transition: all .15s ease;
 }
 
+.icon-container li:hover {
+    box-shadow: 0px 0px 12px rgb(211, 211, 211) ;
+}
+
+/* icon svg */
 .icon-container li img {
   user-select: none;
   -moz-user-select: none;
@@ -102,8 +109,29 @@ body {
   -o-user-select: none;
 }
 
+/* icon name */
 .icon-container li p {
   font-size: 18px;
+}
+
+/* copy */
+.icon-container li .copy-btn {
+    box-sizing: content-box;
+    padding: 4px;
+    border-radius: 4px;
+    width: 24px;
+    opacity: 0;
+    background-color: rgb(247, 247, 247);
+    transition: all .075s;
+}
+
+.icon-container li .copy-btn div {
+    cursor: pointer;
+    height: 24px;
+}
+
+.icon-container li:hover  .copy-btn {
+    opacity: 1;
 }
 
 .icon-container::-webkit-scrollbar {

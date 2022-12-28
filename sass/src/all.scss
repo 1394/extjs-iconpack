@@ -287,8 +287,7 @@ $icon-list: (
 }
 
 @each $key, $val in $icon-list {
-//   $iconUrl: #{$fa-font-path}/#{$val}#{'.svg'};
-  $iconUrl: #{'../resources/images/icon'}/#{$val}#{'.svg'};
+  $iconUrl: #{$fa-font-path}/#{$val}#{'.svg'};
   .svg-icon-#{$key} {
     // mask-image: theme-background-image(#{$val}, "svg") !important;
     mask-image: url($iconUrl) !important;

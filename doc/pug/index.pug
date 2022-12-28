@@ -2,8 +2,8 @@ doctype html
 html(lang="en")
     head
         title Icon pack
+        link(rel="stylesheet", href="./styles/icons.css")
         link(rel="stylesheet", href="./styles/index.css")
-        link(rel="stylesheet", href="./styles/main.css")
         link(rel="icon", href="../resources/images/icon/star_16px.svg")
 
     body
@@ -21,7 +21,11 @@ html(lang="en")
                         img(src=item.source, alt=item.alt)
                         p= item.name
 
+                        div.copy-btn
+                            - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
+                            div(class=classes)
+
                 each val, idx in listItems
                     +listItem(val)
 
-        script(src='./search.js')
+        script(src='./iconpack.js')
