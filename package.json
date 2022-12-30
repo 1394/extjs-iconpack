@@ -6,7 +6,7 @@
 	"description": "package to add icons",
 	"main": "index.js",
 	"scripts": {
-        "generate-iconStyles": "sass doc/styles/vars.scss:doc/styles/icons.css",
+		"generate-iconStyles": "sass doc/styles/vars.scss:doc/styles/icons.css",
 		"update-docs": "node doc/index.js && git add doc/index.html",
 		"update": "npm run generate-iconStyles && npm run update-docs",
 		"version": "npm run update-docs && npm version patch",
