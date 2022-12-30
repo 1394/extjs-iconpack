@@ -6,10 +6,10 @@
 	"description": "package to add icons",
 	"main": "index.js",
 	"scripts": {
-		"generate-iconStyles": "sass doc/styles/vars.scss:doc/styles/icons.css",
+		"generate-iconStyles": "sass doc/styles/vars.scss:doc/styles/icons.css && git add doc/styles ",
 		"update-docs": "node doc/index.js && git add doc/index.html",
 		"update": "npm run generate-iconStyles && npm run update-docs",
-		"version": "npm run update-docs && npm version patch",
+		"version": "npm run update && npm version patch",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
