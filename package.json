@@ -2,14 +2,13 @@
 	"name": "extjs_iconpack",
 	"ext-name": "extjs_iconpack",
 	"SenchaExtName": "extjs_iconpack",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"description": "package to add icons",
 	"main": "index.js",
 	"scripts": {
 		"generate-iconStyles": "sass doc/styles/vars.scss:doc/styles/icons.css && git add doc/styles ",
 		"update-docs": "node doc/index.js && git add doc/index.html",
-		"update": "npm run generate-iconStyles && npm run update-docs",
-		"version": "npm run update && npm version patch",
+		"version": "npm run generate-iconStyles && npm run update-docs",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
