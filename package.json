@@ -2,7 +2,7 @@
 	"name": "extjs_iconpack",
 	"ext-name": "extjs_iconpack",
 	"SenchaExtName": "extjs_iconpack",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "package to add icons",
 	"main": "index.js",
 	"scripts": {

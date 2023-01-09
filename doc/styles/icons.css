@@ -3354,6 +3354,33 @@
   background-image: url(../../resources/images/icon/save-view.svg) !important;
 }
 
+.svg-icon-santa-claus {
+  mask-image: url(../../resources/images/icon/santa-claus.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/santa-claus.svg) !important;
+}
+
+.sigma .x-tool-santa-claus {
+  mask-image: url(../../resources/images/icon/santa-claus.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/santa-claus.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-santa-claus:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-santa-claus {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-santa-claus {
+  background-image: url(../../resources/images/icon/santa-claus.svg) !important;
+}
+
 .svg-icon-menu {
   mask-image: url(../../resources/images/icon/menu.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/menu.svg) !important;
