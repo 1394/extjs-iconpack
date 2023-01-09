@@ -26,7 +26,7 @@ while (styles[tempIdxToReadStyles] !== ');') {
 
 // generate iconList to render pug layout
 const iconsList = icons.map((icon) => {
-    const name = icon.split(':')[0];
+    const name = icon.split(':')[0].trim();
     const svgFilename = icon.split(':')[1].replace(/['", ]+/g, '');
     return {
         source: `${iconPath}/${svgFilename}.svg`,
