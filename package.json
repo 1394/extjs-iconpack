@@ -2,7 +2,7 @@
 	"name": "extjs_iconpack",
 	"ext-name": "extjs_iconpack",
 	"SenchaExtName": "extjs_iconpack",
-	"version": "1.0.6",
+	"version": "1.1.0",
 	"description": "package to add icons",
 	"main": "index.js",
 	"scripts": {
@@ -10,7 +10,7 @@
 		"update-docs": "node doc/index.js && git add doc/index.html",
 		"version": "npm run generate-iconStyles && npm run update-docs",
 		"test": "echo \"Error: no test specified\" && exit 1",
-        "start": "npx http-server -c-1 -o doc"
+		"start": "npx http-server -c-1 -o doc"
 	},
 	"repository": {
 		"type": "git",
