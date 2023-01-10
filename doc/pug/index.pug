@@ -30,22 +30,28 @@ html(lang="en")
 
         div.icon-modal
             div.modal-content
-                span.close &times
-                h2.modal-content__icon-name svg-icon-color
-                .modal-content-inner 
-                    .info-content
-                        span svg-icon-color
-                        div.icons
-                            div.icon.active
-                                div(class=['svg-icon', 'svg-icon-bg-black'])
-                            div.icon
-                                div(class=['svg-icon', 'svg-icon-bg-gray'])
-                            div.icon
-                                div(class=['svg-icon', 'svg-icon-bg-white'])
-                            div.icon
-                                div(class=['svg-icon', 'svg-icon-disabled'])
+                span.close.prevent-select &times
+                //- h2.modal-content__icon-name svg-icon-color
+                .modal-content-inner
+                    .modal-content-row
+                        .info-content
+                            span.prevent-select изменение цвета иконки
+                            div.icons
+                                div.icon.active
+                                    div(class=['svg-icon'])
+                                div.icon
+                                    div(class=['svg-icon', 'svg-icon-bg-black'])
+                                div.icon
+                                    div(class=['svg-icon', 'svg-icon-bg-gray'])
+                                div.icon
+                                    div(class=['svg-icon', 'svg-icon-bg-white'])
+                                div.icon
+                                    div(class=['svg-icon', 'svg-icon-disabled'])
 
-                    .copy-btn-wrapper 
-                        button copy
+                    .modal-content-row
+                        .info-content 
+                            span.info-content__cls
+                            .copy-btn-wrapper 
+                                button copy            
 
         script(src='./iconpack.js')

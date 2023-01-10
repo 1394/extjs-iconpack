@@ -84,7 +84,12 @@ Array.from(iconContainer.children).forEach((element) => {
 
         // set icon class
         [...modal.querySelector('div.icons').children]
-            .forEach((nodeEl) => {
+            .forEach((nodeEl, idx) => {
+                if (idx === 0) {
+                    if (nodeEl.firstChild.classList.length == 2) {
+                        nodeEl.firstChild.classList.remove([...nodeEl.firstChild.classList].pop());
+                    }
+                }
                 if (nodeEl.firstChild.classList.length === 3) {
                     nodeEl.firstChild.classList.remove([...nodeEl.firstChild.classList].pop());
                 }
@@ -92,13 +97,15 @@ Array.from(iconContainer.children).forEach((element) => {
             });
 
         // set icon name
-        modal.querySelector('.modal-content__icon-name').textContent = element.querySelector('img').alt;
+        // modal.querySelector('.modal-content__icon-name').textContent = element.querySelector('img').alt;
 
         // change icon class
         const icons = modal.querySelector('.icons');
         icons.addEventListener('click', (e) => {
             if (e.target.closest('.icon')) {
                 setActiveIcon(icons, e.target.closest('.icon'));
+                const activeSvgClass = modal.querySelector('span.info-content__cls');
+                activeSvgClass.textContent = icons.querySelector('.active div').className;
             }
         });
 
@@ -111,6 +118,9 @@ Array.from(iconContainer.children).forEach((element) => {
                 copyBtn.textContent = 'COPY';
             }, 1000);
         });
+
+        const activeSvgClass = modal.querySelector('span.info-content__cls');
+        activeSvgClass.textContent = icons.querySelector('.active div').className;
 
         // display modal
         modal.style.display = 'block';
