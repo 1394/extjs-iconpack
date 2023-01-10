@@ -72,18 +72,53 @@ searchInput.addEventListener('blur', () => {
 
 // set active icon in modal window
 const setActiveIcon = (icons, nodeEl) => {
-    icons.childNodes.forEach((node) => {
+    icons.querySelectorAll('.icon').forEach((node) => {
         node.classList.remove('active');
     });
     nodeEl.classList.add('active');
 };
 
+// Modal
+
+const modal = document.querySelector('div.icon-modal');
+
+// change icon class
+const icons = modal.querySelector('.icons');
+icons.addEventListener('click', (e) => {
+    if (e.target.closest('.icon-wrapper')) {
+        setActiveIcon(icons, e.target.closest('.icon-wrapper').querySelector('.icon'));
+        const activeSvgClass = modal.querySelector('span.info-content__cls');
+        activeSvgClass.textContent = icons.querySelector('.active div').className;
+    }
+});
+
+// copy class in modal
+modal.querySelector('.copy-btn-wrapper button').addEventListener('click', (e) => {
+    navigator.clipboard.writeText(icons.querySelector('.active div').className);
+    const copyBtn = e.currentTarget;
+    copyBtn.textContent = 'COPIED';
+    setTimeout(() => {
+        copyBtn.textContent = 'COPY';
+    }, 1000);
+});
+
+// close modal
+const closeBtn = modal.querySelector('span.close');
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+    setActiveIcon(icons, icons.querySelector('active.div'));
+};
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+        setActiveIcon(icons, icons.querySelector('active.div'));
+    }
+};
+
 Array.from(iconContainer.children).forEach((element) => {
     element.addEventListener('click', (e) => {
-        const modal = document.querySelector('div.icon-modal');
-
         // set icon class
-        [...modal.querySelector('div.icons').children]
+        [...modal.querySelectorAll('.icon')]
             .forEach((nodeEl, idx) => {
                 if (idx === 0) {
                     if (nodeEl.firstChild.classList.length == 2) {
@@ -96,47 +131,12 @@ Array.from(iconContainer.children).forEach((element) => {
                 nodeEl.firstChild.classList.add(`svg-icon-${element.querySelector('img').alt}`);
             });
 
-        // set icon name
-        // modal.querySelector('.modal-content__icon-name').textContent = element.querySelector('img').alt;
-
-        // change icon class
-        const icons = modal.querySelector('.icons');
-        icons.addEventListener('click', (e) => {
-            if (e.target.closest('.icon')) {
-                setActiveIcon(icons, e.target.closest('.icon'));
-                const activeSvgClass = modal.querySelector('span.info-content__cls');
-                activeSvgClass.textContent = icons.querySelector('.active div').className;
-            }
-        });
-
-        // copy class in modal
-        modal.querySelector('.copy-btn-wrapper button').addEventListener('click', (e) => {
-            navigator.clipboard.writeText(icons.querySelector('.active div').className);
-            const copyBtn = e.currentTarget;
-            copyBtn.textContent = 'COPIED';
-            setTimeout(() => {
-                copyBtn.textContent = 'COPY';
-            }, 1000);
-        });
-
+        setActiveIcon(icons, icons.querySelector('.icon'));
         const activeSvgClass = modal.querySelector('span.info-content__cls');
         activeSvgClass.textContent = icons.querySelector('.active div').className;
 
         // display modal
         modal.style.display = 'block';
-
-        // close modal
-        const closeBtn = modal.querySelector('span.close');
-        closeBtn.onclick = function() {
-            modal.style.display = 'none';
-            setActiveIcon(icons, icons.firstChild);
-        };
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
-                setActiveIcon(icons, icons.firstChild);
-            }
-        };
     });
 
     // copy class

@@ -188,7 +188,7 @@ body {
     border: 1px solid #888;
     border-radius: 12px;
 
-    width: 590px;
+    width: 600px;
 }
 
 .modal-content__icon-name {
@@ -202,10 +202,21 @@ body {
 }
 
 .modal-content-row {
-    display: flex;
-    align-items: center;
-
     margin: 32px 0 0 0;
+}
+
+.modal-content-row.row-icons {
+    padding: 24px 0;
+}
+
+.modal-content p {
+    margin: 0;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.modal-content-row p, .modal-content > p {
+    font-size: 20px;
 }
 
 .info-content {
@@ -217,24 +228,35 @@ body {
     background-color: #ffffff;
 }
 
-.info-content span {
-    font-size: 20px;
-}
-
 .info-content__cls {
     flex-basis: 70%;
+    font-size: 18px;
 }
 
 .info-content .icons {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
-.info-content .icons .icon {
-    width: 32px;
-    height: 32px;
-    margin-right: 24px;
+.icon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scale: 1.5;
+}
+
+.svg-description {
+    scale: 0.75;
+    text-align: center;
+}
+
+.icons .icon-wrapper {
+    position: relative;
+    width: 48px;
+    height: 48px;
     border-radius: 4px;
-    scale: 1.3;
     cursor: pointer;
 
     display: flex;
@@ -244,51 +266,46 @@ body {
     transition: all .15s ease;
 }
 
-.info-content .icons .icon:last-child {
+.icons .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .15s ease;
+}
+
+.icons .icon.active::after {
+    content: '';
+    width: 48px;
+    display: block;
+    position: absolute;
+    height: 2px;
+    background-color: #a1d887;
+    bottom: 0;
+    border-radius: 4px;
+    left: 0;
+}
+
+.icons .icon-content:last-child .icon-wrapper {
     cursor: default;
 }
 
-.info-content .icons .icon:nth-child(4) {
+.icons .icon-content:last-child .icon div {
+    cursor: default;
+}
+
+.icons .icon-content:nth-child(4) .icon {
     background-color: #000000;
 }
 
-/* icon background styles for active el */
-.info-content .icons .icon:nth-child(1).active {
-    background-color: #c2e7b0;
-}
-
-.info-content .icons .icon:nth-child(2).active {
-    background-color: #c2e7b0;
-}
-
-.info-content .icons .icon:nth-child(3).active, .info-content .icons .icon:nth-child(5).active {
-    background-color: #c8f3b2;
-}
-
-.info-content .icons .icon:nth-child(4).active {
-    background-color: #b7dba4;
-}
-
-/* icon background styles for hover el */
-.info-content .icons .icon:nth-child(1):not(.active):hover {
-    background-color: #f3f3f3;
-}
-
-.info-content .icons .icon:nth-child(2):not(.active):hover {
-    background-color: #f3f3f3;
-}
-
-.info-content .icons .icon:nth-child(3):not(.active):hover {
-    background-color: #f3f3f3;
-}
-
-.info-content .icons .icon:nth-child(4):not(.active):hover {
-    background-color: #bebebe;
-}
-
-.info-content .icons .icon div {
+.icons .icon div {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 
 .copy-btn-wrapper {

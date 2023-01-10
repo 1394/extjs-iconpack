@@ -31,22 +31,41 @@ html(lang="en")
         div.icon-modal
             div.modal-content
                 span.close.prevent-select &times
-                //- h2.modal-content__icon-name svg-icon-color
-                .modal-content-inner
-                    .modal-content-row
+                p.prevent-select изменение цвета иконки
+                p.prevent-select выберите цвет и скопируйте класс иконки
+
+                    .modal-content-row.row-icons
                         .info-content
-                            span.prevent-select изменение цвета иконки
                             div.icons
-                                div.icon.active
-                                    div(class=['svg-icon'])
-                                div.icon
-                                    div(class=['svg-icon', 'svg-icon-bg-black'])
-                                div.icon
-                                    div(class=['svg-icon', 'svg-icon-bg-gray'])
-                                div.icon
-                                    div(class=['svg-icon', 'svg-icon-bg-white'])
-                                div.icon
-                                    div(class=['svg-icon', 'svg-icon-disabled'])
+                                div.icon-content
+                                    div.svg-description default
+                                    div.icon-wrapper
+                                        div.icon
+                                            div(class=['svg-icon'])
+                                
+                                div.icon-content
+                                    div.svg-description black
+                                    div.icon-wrapper
+                                        div.icon
+                                            div(class=['svg-icon', 'svg-icon-bg-black'])
+
+                                div.icon-content
+                                    div.svg-description gray
+                                    div.icon-wrapper
+                                        div.icon
+                                            div(class=['svg-icon', 'svg-icon-bg-gray'])
+
+                                div.icon-content
+                                    div.svg-description inverse
+                                    div.icon-wrapper
+                                        div.icon
+                                            div(class=['svg-icon', 'svg-icon-bg-white'])
+
+                                div.icon-content
+                                    div.svg-description disabled
+                                    div.icon-wrapper
+                                        div.icon
+                                            div(class=['svg-icon', 'svg-icon-disabled'])
 
                     .modal-content-row
                         .info-content 
