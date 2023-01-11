@@ -10,7 +10,7 @@
 		"update-docs": "node doc/index.js && git add doc/index.html",
 		"version": "npm run generate-iconStyles && npm run update-docs",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "npx http-server -c-1 -o doc"
+		"start": "npm run update-docs && npx http-server -c-1 -o doc"
 	},
 	"repository": {
 		"type": "git",
