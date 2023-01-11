@@ -31,7 +31,6 @@ html(lang="en")
         div.icon-modal
             div.modal-content
                 span.close.prevent-select &times
-                p.prevent-select изменение цвета иконки
                 p.prevent-select выберите цвет и скопируйте класс иконки
 
                     .modal-content-row.row-icons
@@ -42,7 +41,7 @@ html(lang="en")
                                     div.icon-wrapper
                                         div.icon
                                             div(class=['svg-icon'])
-                                
+
                                 div.icon-content
                                     div.svg-description black
                                     div.icon-wrapper
@@ -71,6 +70,17 @@ html(lang="en")
                         .info-content 
                             span.info-content__cls
                             .copy-btn-wrapper 
-                                button copy            
+                                button copy   
+
+                    .modal-content-row.row-icons
+                        .info-content
+                            div
+                                p Пример использования:
+                                pre 
+                                    code 
+                                        | { 
+                                        |   xtype: 'button',
+                                        |   iconCls: 'svg-icon svg-icon-edit',
+                                        | }
 
         script(src='./iconpack.js')

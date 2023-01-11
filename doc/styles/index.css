@@ -350,3 +350,7 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+pre, code {
+    white-space: unset;
+}
