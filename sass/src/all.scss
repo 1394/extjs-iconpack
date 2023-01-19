@@ -245,7 +245,10 @@ $icon-list: (
 	done-all: "done-all",
 	not-done-all: "not-done-all",
 	not-done-all-2: "not-done-all-2",
-	done-all-2: "done-all-2"
+	done-all-2: "done-all-2",
+    drag-point-16px: "drag-point-16px",
+    drag-point-20px: "drag-point-20px",
+    drag-point-24px: "drag-point-24px"
 );
 
 @mixin svg-icon-mask($color) {
