@@ -6648,6 +6648,87 @@
   background-image: url(../../resources/images/icon/done-all-2.svg) !important;
 }
 
+.svg-icon-drag-point-16px {
+  mask-image: url(../../resources/images/icon/drag-point-16px.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/drag-point-16px.svg) !important;
+}
+
+.sigma .x-tool-drag-point-16px {
+  mask-image: url(../../resources/images/icon/drag-point-16px.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/drag-point-16px.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-drag-point-16px:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-drag-point-16px {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-drag-point-16px {
+  background-image: url(../../resources/images/icon/drag-point-16px.svg) !important;
+}
+
+.svg-icon-drag-point-20px {
+  mask-image: url(../../resources/images/icon/drag-point-20px.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/drag-point-20px.svg) !important;
+}
+
+.sigma .x-tool-drag-point-20px {
+  mask-image: url(../../resources/images/icon/drag-point-20px.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/drag-point-20px.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-drag-point-20px:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-drag-point-20px {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-drag-point-20px {
+  background-image: url(../../resources/images/icon/drag-point-20px.svg) !important;
+}
+
+.svg-icon-drag-point-24px {
+  mask-image: url(../../resources/images/icon/drag-point-24px.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/drag-point-24px.svg) !important;
+}
+
+.sigma .x-tool-drag-point-24px {
+  mask-image: url(../../resources/images/icon/drag-point-24px.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/drag-point-24px.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-drag-point-24px:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-drag-point-24px {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-drag-point-24px {
+  background-image: url(../../resources/images/icon/drag-point-24px.svg) !important;
+}
+
 .x-edge .svg-icon-add {
   background-size: 100%;
 }
