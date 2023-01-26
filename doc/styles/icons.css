@@ -2274,21 +2274,21 @@
   background-image: url(../../resources/images/icon/executor.svg) !important;
 }
 
-.svg-icon-exel {
-  mask-image: url(../../resources/images/icon/exel.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/exel.svg) !important;
+.svg-icon-excel {
+  mask-image: url(../../resources/images/icon/excel.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/excel.svg) !important;
 }
 
-.sigma .x-tool-exel {
-  mask-image: url(../../resources/images/icon/exel.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/exel.svg) !important;
+.sigma .x-tool-excel {
+  mask-image: url(../../resources/images/icon/excel.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/excel.svg) !important;
   background-color: white !important;
 }
-.sigma .x-tool-exel:before {
+.sigma .x-tool-excel:before {
   content: "";
 }
 
-.x-edge.sigma .x-tool-exel {
+.x-edge.sigma .x-tool-excel {
   background-color: inherit !important;
 }
 .x-edge .svg-icon {
@@ -2297,8 +2297,8 @@
   background-size: 75%;
   background-color: inherit !important;
 }
-.x-edge .svg-icon.svg-icon-exel {
-  background-image: url(../../resources/images/icon/exel.svg) !important;
+.x-edge .svg-icon.svg-icon-excel {
+  background-image: url(../../resources/images/icon/excel.svg) !important;
 }
 
 .svg-icon-exit {
