@@ -1,5 +1,6 @@
 {
 	"name": "extjs_iconpack",
+	"namespace": "Iconpack",
 	"ext-name": "extjs_iconpack",
 	"SenchaExtName": "extjs_iconpack",
 	"version": "1.2.4",
