@@ -8,7 +8,7 @@
 	"main": "index.js",
 	"scripts": {
 		"generate-styles": "sass doc/styles/vars.scss:doc/styles/icons.css && git add doc/styles ",
-		"docs": "node doc/index.js && git add doc/index.html",
+		"docs": "node doc/index.js && git add doc/index.html && git add src/modal",
 		"version": "npm run generate-styles && npm run docs",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "npm run docs && npx http-server -c-1 -o doc"
