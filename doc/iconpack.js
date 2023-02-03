@@ -1,40 +1,43 @@
 const searchInput = document.querySelector('input.search');
-const iconContainer = document.querySelector('ul.icon-container');
-const iconList = iconContainer.getElementsByTagName('li');
+const iconContainer = document.querySelector('ul.icon-container.project-icon-container');
+const faIconContainer = document.querySelector('ul.icon-container.fa-icon-container');
 
 searchInput.addEventListener('input', (e) => {
     const filter = searchInput.value.toLowerCase();
     let hiddenItemsCount = 0;
+    const list = document
+        .querySelector('ul.icon-container.active')
+        .getElementsByTagName('li');
 
     // hide list items
-    for (let i = 0; i < iconList.length; ++i) {
-        const item = iconList[i].querySelector('img');
+    for (let i = 0; i < list.length; ++i) {
+        const item = list[i].querySelector('img');
         const searchValue = item.alt;
 
-        if (iconList[i].tagName.toLowerCase() === 'li') {
+        if (list[i].tagName.toLowerCase() === 'li') {
             if (searchValue.toLowerCase().indexOf(filter) > -1) {
-                iconList[i].style.display = '';
+                list[i].style.display = '';
             } else {
-                iconList[i].style.display = 'none';
+                list[i].style.display = 'none';
                 hiddenItemsCount += 1;
             }
         }
     }
 
     // add empty message if nothing found
-    const isEmptyMessageExists = !!iconContainer.querySelector('#message-empty');
-    const iconContainerLength = [...iconContainer.children].filter((icon) => icon.tagName === 'LI').length;
+    const isEmptyMessageExists = !!list.querySelector('#message-empty');
+    const iconContainerLength = [...list.children].filter((icon) => icon.tagName === 'LI').length;
 
     if (hiddenItemsCount >= iconContainerLength) {
         if (!isEmptyMessageExists) {
             const message = document.createElement('div');
             message.textContent = 'Nothing found!';
             message.id = 'message-empty';
-            iconContainer.appendChild(message);
+            list.appendChild(message);
         }
     } else {
         if (isEmptyMessageExists) {
-            iconContainer.removeChild(iconContainer.querySelector('#message-empty'));
+            list.removeChild(list.querySelector('#message-empty'));
         }
     }
 });
@@ -68,6 +71,36 @@ searchInput.addEventListener('blur', () => {
     document.querySelector('.search-state').textContent = '/';
 });
 
+const iconPack = document.querySelector('.icons-pack');
+iconPack.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.classList.contains('active')) {
+        return;
+    }
+
+    // set active class
+    [...iconPack.children].forEach((item) => {
+        item.classList.remove('active');
+    });
+    e.target.classList.add('active');
+
+    // generate new layout of icons
+    const pack = target.textContent.toLowerCase().trim();
+
+    // reset search value
+    searchInput.value = '';
+    searchInput.dispatchEvent(new Event('input'));
+
+    // change active icon list
+    if (pack === 'project') {
+        iconContainer.classList.add('active');
+        faIconContainer.classList.remove('active');
+    } else {
+        iconContainer.classList.remove('active');
+        faIconContainer.classList.add('active');
+    }
+});
+
 // === Modal ===
 
 // set active icon in modal window
@@ -77,8 +110,6 @@ const setActiveIcon = (icons, nodeEl) => {
     });
     nodeEl.classList.add('active');
 };
-
-// Modal
 
 const modal = document.querySelector('div.icon-modal');
 
@@ -115,9 +146,11 @@ window.onclick = function(event) {
     }
 };
 
-Array.from(iconContainer.children).forEach((element) => {
-    element.addEventListener('click', (e) => {
-        // set icon class
+const iconContainerHandler = (e, iconClsPrefix) => {
+    const target = e.target;
+    const element = target.closest('li') || target.tagName == 'LI';
+
+    if (element) {
         [...modal.querySelectorAll('.icon')]
             .forEach((nodeEl, idx) => {
                 if (idx === 0) {
@@ -128,7 +161,7 @@ Array.from(iconContainer.children).forEach((element) => {
                 if (nodeEl.firstChild.classList.length === 3) {
                     nodeEl.firstChild.classList.remove([...nodeEl.firstChild.classList].pop());
                 }
-                nodeEl.firstChild.classList.add(`svg-icon-${element.querySelector('img').alt}`);
+                nodeEl.firstChild.classList.add(`${iconClsPrefix}-${element.querySelector('img').alt}`);
             });
 
         setActiveIcon(icons, icons.querySelector('.icon'));
@@ -137,19 +170,22 @@ Array.from(iconContainer.children).forEach((element) => {
 
         // display modal
         modal.style.display = 'block';
-    });
 
-    // copy class
-    element.querySelector('div.copy-btn').addEventListener('click', (e) => {
-        e.stopPropagation();
-        const clsName = e.target.className;
-        const iconAlt = e.target.closest('li').querySelector('img').alt;
-        const iconCls = `svg-icon svg-icon-${iconAlt}`;
-        navigator.clipboard.writeText(iconCls);
+        // copy class
+        element.querySelector('div.copy-btn').addEventListener('click', (e) => {
+            e.stopPropagation();
+            const clsName = e.target.className;
+            const iconAlt = e.target.closest('li').querySelector('img').alt;
+            const iconCls = `svg-icon ${iconClsPrefix}-${iconAlt}`;
+            navigator.clipboard.writeText(iconCls);
 
-        e.target.className = 'svg-icon svg-icon-check';
-        setTimeout(() => {
-            e.target.className = clsName;
-        }, 1000);
-    });
-});
+            e.target.className = 'svg-icon svg-icon-check';
+            setTimeout(() => {
+                e.target.className = clsName;
+            }, 1000);
+        });
+    }
+};
+
+iconContainer.addEventListener('click', (e) => iconContainerHandler(e, 'svg-icon'));
+faIconContainer.addEventListener('click', (e) => iconContainerHandler(e, 'svg-icon-fa'));

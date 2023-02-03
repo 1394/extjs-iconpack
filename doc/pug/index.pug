@@ -9,13 +9,18 @@ html(lang="en")
     body
         div.icon_pack-wrapper
 
-            span.search-wrapper
-                input(type="text", class="search", placeholder="Search icon")
+            .search-container 
+                span.search-wrapper
+                    input(type="search", class="search", placeholder="Search icon")
 
-                - var classes = ['search-state', 'prevent-select']
-                span(class=classes) /
+                    - var classes = ['search-state', 'prevent-select']
+                    span(class=classes) /
 
-            ul.icon-container
+                .icons-pack
+                    span.active Project 
+                    span Font awesome
+
+            ul.icon-container.project-icon-container.active
                 mixin listItem(item)
                     li
                         img(src=item.source, alt=item.alt)
@@ -26,6 +31,19 @@ html(lang="en")
                             div(class=classes)
 
                 each val, idx in listItems
+                    +listItem(val)
+
+            ul.icon-container.fa-icon-container
+                mixin listItem(item)
+                    li
+                        img(src=item.source, alt=item.alt)
+                        p= item.name
+
+                        div.copy-btn
+                            - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
+                            div(class=classes)
+
+                each val, idx in faListItems
                     +listItem(val)
 
         div.icon-modal

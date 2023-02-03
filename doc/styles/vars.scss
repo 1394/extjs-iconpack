@@ -6,6 +6,10 @@ $active-color-inter: #F18716;
 
 // return path to icon directory
 @function get-resource-path($path, $poolName) {
+    @if $path == 'font-awesome' {
+        @return '../../resources/font-awesome';
+    }
+
     @return '../../resources/images/icon';
 }
 

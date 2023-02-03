@@ -1,4 +1,6 @@
-$fa-font-path: get-resource-path('images/icon', 'shared');
+@import '../font-awesome/all.scss';
+
+$icon-font-path: get-resource-path('images/icon', 'shared');
 
 $icon-list: (
 	account-circle: "account-circle",
@@ -291,7 +293,7 @@ $icon-list: (
 }
 
 @each $key, $val in $icon-list {
-  $iconUrl: #{$fa-font-path}/#{$val}#{'.svg'};
+  $iconUrl: #{$icon-font-path}/#{$val}#{'.svg'};
   .svg-icon-#{$key} {
     // mask-image: theme-background-image(#{$val}, "svg") !important;
     mask-image: url($iconUrl) !important;
