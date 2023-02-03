@@ -5,6 +5,14 @@ html(lang="en")
         link(rel="stylesheet", href="./styles/icons.css")
         link(rel="stylesheet", href="./styles/index.css")
         link(rel="icon", href="../resources/images/icon/star_16px.svg")
+        script 
+            - const str = `
+            -    window.icons = {
+            -       project: [${listItems.map(el => JSON.stringify(el)).join(', ')}],
+            -       fontAwesome: [${faListItems.map(el => JSON.stringify(el)).join(', ')}]
+            -    }
+            - `
+            != str
 
     body
         div.icon_pack-wrapper

@@ -84,7 +84,6 @@ iconPack.addEventListener('click', (e) => {
     });
     e.target.classList.add('active');
 
-    // generate new layout of icons
     const pack = target.textContent.toLowerCase().trim();
 
     // reset search value
@@ -93,8 +92,8 @@ iconPack.addEventListener('click', (e) => {
 
     // change active icon list
     if (pack === 'project') {
-        iconContainer.classList.add('active');
         faIconContainer.classList.remove('active');
+        iconContainer.classList.add('active');
     } else {
         iconContainer.classList.remove('active');
         faIconContainer.classList.add('active');

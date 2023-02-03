@@ -17,13 +17,18 @@
   .x-autocontainer-innerCt {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: start;
     gap: 12px;
     grid-auto-rows: min-content;
   }
-  .x-btn-button-default-small {
-    display: grid;
-    grid-template-columns: 24px 1fr 24px;
+  .icon-pack-grid-btn {
+    .x-btn-button-default-small {
+        display: grid;
+        grid-template-columns: 24px 1fr 24px;
+        align-items: center;
+    }
+  }
+  .icon-pack-search {
+    display: flex;
     align-items: center;
   }
 }
