@@ -3,7 +3,7 @@
  * определяющего значок.
  */
 Ext.define('Iconpack.modal.SelectIconClassPanel', {
-    extend: 'Ext.panel.Panel',
+    extend: 'Ext.tab.Panel',
     xtype: 'SelectIconClassPanel',
     cls: 'SelectIconClassPanel',
     title: 'Выберите подходящий значок',
@@ -12,15 +12,13 @@ Ext.define('Iconpack.modal.SelectIconClassPanel', {
 
     width: 1080,
     height: 750,
-    padding: 10,
-    overflowY: true,
 
     // search field, buttons to change icons layout
     dockedItems: [
         {
             xtype: 'panel',
             dock: 'top',
-            margin: '0 0 15 0',
+            margin: 10,
             cls: 'icon-pack-search',
             items: [
                 {
@@ -29,28 +27,25 @@ Ext.define('Iconpack.modal.SelectIconClassPanel', {
                     name: 'icon',
                     fieldLabel: 'Поиск иконки',
                     reference: 'search-icon-field',
-                },
-                {
-                    xtype: 'button',
-                    text: 'Project',
-                    iconsTypeProp: 'project',
-                    reference: 'btn-project',
-                    scale: 'medium',
-                    handler() {
-                        this.up('SelectIconClassPanel').setIconsType(this);
-                    },
-                },
-                {
-                    xtype: 'button',
-                    text: 'Font Awesome',
-                    iconsTypeProp: 'fontAwesome',
-                    reference: 'btn-font_awesome',
-                    scale: 'medium',
-                    handler() {
-                        this.up('SelectIconClassPanel').setIconsType(this);
-                    },
                 }
             ],
+        }
+    ],
+
+    items: [
+        {
+            xtype: 'panel',
+            title: 'Project',
+            overflowY: true,
+            padding: 10,
+            reference: 'project-tab-panel',
+        },
+        {
+            xtype: 'panel',
+            title: 'Font awesome',
+            overflowY: true,
+            padding: 10,
+            reference: 'font_awesome-tab-panel',
         }
     ],
 
@@ -59,38 +54,33 @@ Ext.define('Iconpack.modal.SelectIconClassPanel', {
 
         this.iconsStore = Ext.create('class.icons');
 
-        this.down('[reference=\'btn-project\']').setDisabled(true);
-        // insert icons from store
-        this.insertIcons(this.getIconsData());
+        // insert icons into tabs
+        const projectTab = this.down('[reference=\'project-tab-panel\']');
+        const fontAwesome = this.down('[reference=\'font_awesome-tab-panel\']');
+
+        this.insertIcons(this.getIconsData('project'), projectTab);
+        this.insertIcons(this.getIconsData('fontAwesome'), fontAwesome);
 
         // update view on search
         this.searchField = this.down('[reference=\'search-icon-field\']');
+        // clear search value and tab filtration
+        this.on('tabchange', () => {
+            this.searchField.setValue('');
+            this.filterIcons(this.searchField.getValue());
+        });
         this.searchField.on('change', (field) => {
             this.filterIcons(field.value);
         });
-    },
-
-    // TODO: refactor to controller
-    setIconsType(button) {
-        this.searchField.setValue('');
-        button.setDisabled(true);
-        if (button.iconsTypeProp === 'fontAwesome') {
-            this.down('[reference=\'btn-project\']').setDisabled(false);
-        } else {
-            this.down('[reference=\'btn-font_awesome\']').setDisabled(false);
-        }
-        this.removeAll();
-        this.insertIcons(this.getIconsData(button.iconsTypeProp));
     },
 
     /**
      * insert icons into panel
      * @param {Object<{ value: String, description: String }>} icons
      */
-    insertIcons(icons) {
+    insertIcons(icons, tab) {
         // generate icons table
         icons.forEach((icon) => {
-            this.add({
+            tab.add({
                 xtype: 'button',
                 iconCls: icon.value,
                 tooltip: icon.description,
@@ -108,7 +98,7 @@ Ext.define('Iconpack.modal.SelectIconClassPanel', {
      * @param {String} searchValue
      */
     filterIcons(searchValue) {
-        this.items.getRange().forEach((item) => {
+        this.getActiveTab().items.getRange().forEach((item) => {
             if (item.text.includes(searchValue)) {
                 item.setStyle('display', '');
             } else {
