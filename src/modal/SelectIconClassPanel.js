@@ -26,7 +26,7 @@ Ext.define('Iconpack.modal.SelectIconClassPanel', {
                     width: 300,
                     name: 'icon',
                     fieldLabel: 'Поиск иконки',
-                    reference: 'search-icon-field',
+                    itemId: 'search-icon-field',
                 }
             ],
         }
@@ -38,14 +38,14 @@ Ext.define('Iconpack.modal.SelectIconClassPanel', {
             title: 'Project',
             overflowY: true,
             padding: 10,
-            reference: 'project-tab-panel',
+            itemId: 'project-tab-panel',
         },
         {
             xtype: 'panel',
             title: 'Font awesome',
             overflowY: true,
             padding: 10,
-            reference: 'font_awesome-tab-panel',
+            itemId: 'font_awesome-tab-panel',
         }
     ],
 
@@ -55,14 +55,14 @@ Ext.define('Iconpack.modal.SelectIconClassPanel', {
         this.iconsStore = Ext.create('class.icons');
 
         // insert icons into tabs
-        const projectTab = this.down('[reference=\'project-tab-panel\']');
-        const fontAwesome = this.down('[reference=\'font_awesome-tab-panel\']');
+        const projectTab = this.down('#project-tab-panel');
+        const fontAwesome = this.down('#font_awesome-tab-panel');
 
         this.insertIcons(this.getIconsData('project'), projectTab);
         this.insertIcons(this.getIconsData('fontAwesome'), fontAwesome);
 
         // update view on search
-        this.searchField = this.down('[reference=\'search-icon-field\']');
+        this.searchField = this.down('#search-icon-field');
         // clear search value and tab filtration
         this.on('tabchange', () => {
             this.searchField.setValue('');
