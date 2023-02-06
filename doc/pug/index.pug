@@ -14,7 +14,7 @@ html(lang="en")
 
             .search-container 
                 span.search-wrapper
-                    input(type="search", class="search", placeholder="Search icon")
+                    input(type="text", class="search", placeholder="Search icon")
 
                     - var classes = ['search-state', 'prevent-select']
                     span(class=classes) /
@@ -23,7 +23,8 @@ html(lang="en")
                     span.active Project 
                     span Font awesome
 
-            //- ul.icon-container.project-icon-container.active
+                button.btn-show-icons Показать все 
+                    span.btn-show-icons--count
 
             template#icon-list-item
                 li
@@ -35,31 +36,6 @@ html(lang="en")
                         div(class=classes)
 
             ul.icon-container
-
-                //- mixin listItem(item)
-                //-     li
-                //-         img(src=item.source, alt=item.alt)
-                //-         p= item.name
-
-                //-         div.copy-btn
-                //-             - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
-                //-             div(class=classes)
-
-                //- each val, idx in listItems
-                //-     +listItem(val)
-
-            //- ul.icon-container.fa-icon-container
-                //- mixin listItem(item)
-                //-     li
-                //-         img(src=item.source, alt=item.alt)
-                //-         p= item.name
-
-                //-         div.copy-btn
-                //-             - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
-                //-             div(class=classes)
-
-                //- each val, idx in faListItems
-                //-     +listItem(val)
 
         div.icon-modal
             div.modal-content

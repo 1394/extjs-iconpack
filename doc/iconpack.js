@@ -1,48 +1,35 @@
 const searchInput = document.querySelector('input.search');
-// const iconContainer = document.querySelector('ul.icon-container.project-icon-container');
-// const faIconContainer = document.querySelector('ul.icon-container.fa-icon-container');
 const iconContainer = document.querySelector('ul.icon-container');
+const showElementsBtn = document.querySelector('.btn-show-icons');
+const iconsCount = showElementsBtn.querySelector('.btn-show-icons--count');
 
 let currentIconPack = 'project';
 
 searchInput.addEventListener('input', (e) => {
-    const filter = searchInput.value.toLowerCase();
-    let hiddenItemsCount = 0;
-
-    const list = iconContainer;
-
-    // hide list items
-    for (let i = 0; i < list.length; ++i) {
-        const item = list[i].querySelector('img');
-        const searchValue = item.alt;
-
-        if (list[i].tagName.toLowerCase() === 'li') {
-            if (searchValue.toLowerCase().indexOf(filter) > -1) {
-                list[i].style.display = '';
-            } else {
-                list[i].style.display = 'none';
-                hiddenItemsCount += 1;
-            }
-        }
+    if (searchInput.value.length === 0) {
+        // clear
+        iconContainer.innerHTML = '';
+        return;
     }
 
-    // add empty message if nothing found
-    const isEmptyMessageExists = !!list.querySelector('#message-empty');
-    const iconContainerLength = [...list.children].filter((icon) => icon.tagName === 'LI').length;
+    setTimeout(() => {
+        const searchValue = searchInput.value.toLowerCase();
+        const searchItems = [...window.icons[currentIconPack]]
+            .filter((item) => {
+                return item.name.includes(searchValue);
+            })
+            .map((item) => {
+                return generateIconNode(item);
+            });
 
-    if (hiddenItemsCount >= iconContainerLength) {
-        if (!isEmptyMessageExists) {
-            const message = document.createElement('div');
-            message.textContent = 'Nothing found!';
-            message.id = 'message-empty';
-            list.appendChild(message);
-        }
-    } else {
-        if (isEmptyMessageExists) {
-            list.removeChild(list.querySelector('#message-empty'));
-        }
-    }
+        iconContainer.replaceChildren(...searchItems);
+    }, 300);
 });
+
+showElementsBtn.addEventListener('click', () => {
+    generateIconList(window.icons[currentIconPack]);
+});
+
 
 // focus input on special keys
 window.addEventListener('keyup', (e) => {
@@ -73,6 +60,12 @@ searchInput.addEventListener('blur', () => {
     document.querySelector('.search-state').textContent = '/';
 });
 
+const setItemsCount = () => {
+    iconsCount.textContent = window.icons[currentIconPack].length;
+};
+
+setItemsCount();
+
 const iconPack = document.querySelector('.icons-pack');
 iconPack.addEventListener('click', (e) => {
     const target = e.target;
@@ -88,38 +81,42 @@ iconPack.addEventListener('click', (e) => {
 
     const pack = target.textContent.toLowerCase().trim();
 
+    iconContainer.innerHTML = '';
     // reset search value
     searchInput.value = '';
-    searchInput.dispatchEvent(new Event('input'));
 
     // change active icon list
     // clear container
     iconContainer.innerHTML = '';
     if (pack === 'project') {
         currentIconPack = 'project';
-        generateIconList(window.icons['project']);
+        setItemsCount();
     } else {
         currentIconPack = 'fontAwesome';
-        generateIconList(window.icons['fontAwesome']);
+        setItemsCount();
     }
 });
 
+const generateIconNode = (item) => {
+    const template = document.querySelector('#icon-list-item');
+    const clone = template.content.cloneNode(true);
+
+    const img = clone.querySelector('img');
+    img.src = item.source;
+    img.alt = item.alt;
+
+    const p = clone.querySelector('p');
+    p.textContent = item.name;
+
+    return clone;
+};
+
 const generateIconList = (items) => {
     items.forEach((item) => {
-        const template = document.querySelector('#icon-list-item');
-        const clone = template.content.cloneNode(true);
-
-        const img = clone.querySelector('img');
-        img.src = item.source;
-        img.alt = item.alt;
-
-        const p = clone.querySelector('p');
-        p.textContent = item.name;
-
+        const clone = generateIconNode(item);
         iconContainer.appendChild(clone);
     });
 };
-generateIconList(window.icons['project']);
 
 // === Modal ===
 
