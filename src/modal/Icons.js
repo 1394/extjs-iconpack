@@ -98,6 +98,7 @@ Ext.define('Iconpack.modal.Icons', {
         {value: 'svg-icon svg-icon-email', description: 'email'},
         {value: 'svg-icon svg-icon-enlarge', description: 'enlarge'},
         {value: 'svg-icon svg-icon-executor', description: 'executor'},
+        {value: 'svg-icon svg-icon-exel', description: 'exel'},
         {value: 'svg-icon svg-icon-excel', description: 'excel'},
         {value: 'svg-icon svg-icon-exit', description: 'exit'},
         {value: 'svg-icon svg-icon-expand-bottom', description: 'expand-bottom'},
@@ -262,7 +263,7 @@ Ext.define('Iconpack.modal.Icons', {
         {value: 'svg-icon svg-icon-done-all-2', description: 'done-all-2'},
         {value: 'svg-icon svg-icon-drag-point-16px', description: 'drag-point-16px'},
         {value: 'svg-icon svg-icon-drag-point-20px', description: 'drag-point-20px'},
-        {value: 'svg-icon svg-icon-drag-point-24px', description: 'drag-point-24px'}
+        {value: 'svg-icon svg-icon-drag-point-24px', description: 'drag-point-24px'},
         // InsertIcons.end
     ],
 
@@ -1657,7 +1658,7 @@ Ext.define('Iconpack.modal.Icons', {
         {value: 'svg-icon svg-icon-fa-y', description: 'y'},
         {value: 'svg-icon svg-icon-fa-yen-sign', description: 'yen-sign'},
         {value: 'svg-icon svg-icon-fa-yin-yang', description: 'yin-yang'},
-        {value: 'svg-icon svg-icon-fa-z', description: 'z'}
+        {value: 'svg-icon svg-icon-fa-z', description: 'z'},
         // InsertFaIcons.end
     ],
 });
