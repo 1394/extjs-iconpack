@@ -98,7 +98,7 @@ body {
 /*  */
 
 .icon-container {
-  display: none;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   gap: 24px;
@@ -110,9 +110,9 @@ body {
   transition: all .3s ease-in-out;
 }
 
-.icon-container.active {
+/* .icon-container.active {
     display: grid;
-}
+} */
 
 .icon-container li {
   display: grid;

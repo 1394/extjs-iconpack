@@ -6,12 +6,7 @@ html(lang="en")
         link(rel="stylesheet", href="./styles/index.css")
         link(rel="icon", href="../resources/images/icon/star_16px.svg")
         script 
-            - const str = `
-            -    window.icons = {
-            -       project: [${listItems.map(el => JSON.stringify(el)).join(', ')}],
-            -       fontAwesome: [${faListItems.map(el => JSON.stringify(el)).join(', ')}]
-            -    }
-            - `
+            - const str = `window.icons = {project: [${listItems.map(el => JSON.stringify(el)).join(', ')}],fontAwesome: [${faListItems.map(el => JSON.stringify(el)).join(', ')}]}`
             != str
 
     body
@@ -28,31 +23,43 @@ html(lang="en")
                     span.active Project 
                     span Font awesome
 
-            ul.icon-container.project-icon-container.active
-                mixin listItem(item)
-                    li
-                        img(src=item.source, alt=item.alt)
-                        p= item.name
+            //- ul.icon-container.project-icon-container.active
 
-                        div.copy-btn
-                            - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
-                            div(class=classes)
+            template#icon-list-item
+                li
+                    img
+                    p
 
-                each val, idx in listItems
-                    +listItem(val)
+                    div.copy-btn
+                        - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
+                        div(class=classes)
 
-            ul.icon-container.fa-icon-container
-                mixin listItem(item)
-                    li
-                        img(src=item.source, alt=item.alt)
-                        p= item.name
+            ul.icon-container
 
-                        div.copy-btn
-                            - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
-                            div(class=classes)
+                //- mixin listItem(item)
+                //-     li
+                //-         img(src=item.source, alt=item.alt)
+                //-         p= item.name
 
-                each val, idx in faListItems
-                    +listItem(val)
+                //-         div.copy-btn
+                //-             - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
+                //-             div(class=classes)
+
+                //- each val, idx in listItems
+                //-     +listItem(val)
+
+            //- ul.icon-container.fa-icon-container
+                //- mixin listItem(item)
+                //-     li
+                //-         img(src=item.source, alt=item.alt)
+                //-         p= item.name
+
+                //-         div.copy-btn
+                //-             - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
+                //-             div(class=classes)
+
+                //- each val, idx in faListItems
+                //-     +listItem(val)
 
         div.icon-modal
             div.modal-content

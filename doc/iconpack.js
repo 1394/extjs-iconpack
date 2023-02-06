@@ -1,13 +1,15 @@
 const searchInput = document.querySelector('input.search');
-const iconContainer = document.querySelector('ul.icon-container.project-icon-container');
-const faIconContainer = document.querySelector('ul.icon-container.fa-icon-container');
+// const iconContainer = document.querySelector('ul.icon-container.project-icon-container');
+// const faIconContainer = document.querySelector('ul.icon-container.fa-icon-container');
+const iconContainer = document.querySelector('ul.icon-container');
+
+let currentIconPack = 'project';
 
 searchInput.addEventListener('input', (e) => {
     const filter = searchInput.value.toLowerCase();
     let hiddenItemsCount = 0;
-    const list = document
-        .querySelector('ul.icon-container.active')
-        .getElementsByTagName('li');
+
+    const list = iconContainer;
 
     // hide list items
     for (let i = 0; i < list.length; ++i) {
@@ -91,18 +93,38 @@ iconPack.addEventListener('click', (e) => {
     searchInput.dispatchEvent(new Event('input'));
 
     // change active icon list
+    // clear container
+    iconContainer.innerHTML = '';
     if (pack === 'project') {
-        faIconContainer.classList.remove('active');
-        iconContainer.classList.add('active');
+        currentIconPack = 'project';
+        generateIconList(window.icons['project']);
     } else {
-        iconContainer.classList.remove('active');
-        faIconContainer.classList.add('active');
+        currentIconPack = 'fontAwesome';
+        generateIconList(window.icons['fontAwesome']);
     }
 });
+
+const generateIconList = (items) => {
+    items.forEach((item) => {
+        const template = document.querySelector('#icon-list-item');
+        const clone = template.content.cloneNode(true);
+
+        const img = clone.querySelector('img');
+        img.src = item.source;
+        img.alt = item.alt;
+
+        const p = clone.querySelector('p');
+        p.textContent = item.name;
+
+        iconContainer.appendChild(clone);
+    });
+};
+generateIconList(window.icons['project']);
 
 // === Modal ===
 
 // set active icon in modal window
+
 const setActiveIcon = (icons, nodeEl) => {
     icons.querySelectorAll('.icon').forEach((node) => {
         node.classList.remove('active');
@@ -145,7 +167,10 @@ window.onclick = function(event) {
     }
 };
 
-const iconContainerHandler = (e, iconClsPrefix) => {
+// change pack
+const iconContainerHandler = (e) => {
+    const iconClsPrefix = currentIconPack === 'project' ? 'svg-icon' : 'svg-icon-fa';
+
     const target = e.target;
     const element = target.closest('li') || target.tagName == 'LI';
 
@@ -186,5 +211,4 @@ const iconContainerHandler = (e, iconClsPrefix) => {
     }
 };
 
-iconContainer.addEventListener('click', (e) => iconContainerHandler(e, 'svg-icon'));
-faIconContainer.addEventListener('click', (e) => iconContainerHandler(e, 'svg-icon-fa'));
+iconContainer.addEventListener('click', (e) => iconContainerHandler(e));
