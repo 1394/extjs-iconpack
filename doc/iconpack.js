@@ -1,43 +1,35 @@
 const searchInput = document.querySelector('input.search');
 const iconContainer = document.querySelector('ul.icon-container');
-const iconList = iconContainer.getElementsByTagName('li');
+const showElementsBtn = document.querySelector('.btn-show-icons');
+const iconsCount = showElementsBtn.querySelector('.btn-show-icons--count');
+
+let currentIconPack = 'project';
 
 searchInput.addEventListener('input', (e) => {
-    const filter = searchInput.value.toLowerCase();
-    let hiddenItemsCount = 0;
-
-    // hide list items
-    for (let i = 0; i < iconList.length; ++i) {
-        const item = iconList[i].querySelector('img');
-        const searchValue = item.alt;
-
-        if (iconList[i].tagName.toLowerCase() === 'li') {
-            if (searchValue.toLowerCase().indexOf(filter) > -1) {
-                iconList[i].style.display = '';
-            } else {
-                iconList[i].style.display = 'none';
-                hiddenItemsCount += 1;
-            }
-        }
+    if (searchInput.value.length === 0) {
+        // clear
+        iconContainer.innerHTML = '';
+        return;
     }
 
-    // add empty message if nothing found
-    const isEmptyMessageExists = !!iconContainer.querySelector('#message-empty');
-    const iconContainerLength = [...iconContainer.children].filter((icon) => icon.tagName === 'LI').length;
+    setTimeout(() => {
+        const searchValue = searchInput.value.toLowerCase();
+        const searchItems = [...window.icons[currentIconPack]]
+            .filter((item) => {
+                return item.name.includes(searchValue);
+            })
+            .map((item) => {
+                return generateIconNode(item);
+            });
 
-    if (hiddenItemsCount >= iconContainerLength) {
-        if (!isEmptyMessageExists) {
-            const message = document.createElement('div');
-            message.textContent = 'Nothing found!';
-            message.id = 'message-empty';
-            iconContainer.appendChild(message);
-        }
-    } else {
-        if (isEmptyMessageExists) {
-            iconContainer.removeChild(iconContainer.querySelector('#message-empty'));
-        }
-    }
+        iconContainer.replaceChildren(...searchItems);
+    }, 300);
 });
+
+showElementsBtn.addEventListener('click', () => {
+    generateIconList(window.icons[currentIconPack]);
+});
+
 
 // focus input on special keys
 window.addEventListener('keyup', (e) => {
@@ -68,17 +60,74 @@ searchInput.addEventListener('blur', () => {
     document.querySelector('.search-state').textContent = '/';
 });
 
+const setItemsCount = () => {
+    iconsCount.textContent = window.icons[currentIconPack].length;
+};
+
+setItemsCount();
+
+const iconPack = document.querySelector('.icons-pack');
+iconPack.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.classList.contains('active')) {
+        return;
+    }
+
+    // set active class
+    [...iconPack.children].forEach((item) => {
+        item.classList.remove('active');
+    });
+    e.target.classList.add('active');
+
+    const pack = target.textContent.toLowerCase().trim();
+
+    iconContainer.innerHTML = '';
+    // reset search value
+    searchInput.value = '';
+
+    // change active icon list
+    // clear container
+    iconContainer.innerHTML = '';
+    if (pack === 'project') {
+        currentIconPack = 'project';
+        setItemsCount();
+    } else {
+        currentIconPack = 'fontAwesome';
+        setItemsCount();
+    }
+});
+
+const generateIconNode = (item) => {
+    const template = document.querySelector('#icon-list-item');
+    const clone = template.content.cloneNode(true);
+
+    const img = clone.querySelector('img');
+    img.src = item.source;
+    img.alt = item.alt;
+
+    const p = clone.querySelector('p');
+    p.textContent = item.name;
+
+    return clone;
+};
+
+const generateIconList = (items) => {
+    items.forEach((item) => {
+        const clone = generateIconNode(item);
+        iconContainer.appendChild(clone);
+    });
+};
+
 // === Modal ===
 
 // set active icon in modal window
+
 const setActiveIcon = (icons, nodeEl) => {
     icons.querySelectorAll('.icon').forEach((node) => {
         node.classList.remove('active');
     });
     nodeEl.classList.add('active');
 };
-
-// Modal
 
 const modal = document.querySelector('div.icon-modal');
 
@@ -115,9 +164,14 @@ window.onclick = function(event) {
     }
 };
 
-Array.from(iconContainer.children).forEach((element) => {
-    element.addEventListener('click', (e) => {
-        // set icon class
+// change pack
+const iconContainerHandler = (e) => {
+    const iconClsPrefix = currentIconPack === 'project' ? 'svg-icon' : 'svg-icon-fa';
+
+    const target = e.target;
+    const element = target.closest('li') || target.tagName == 'LI';
+
+    if (element) {
         [...modal.querySelectorAll('.icon')]
             .forEach((nodeEl, idx) => {
                 if (idx === 0) {
@@ -128,7 +182,7 @@ Array.from(iconContainer.children).forEach((element) => {
                 if (nodeEl.firstChild.classList.length === 3) {
                     nodeEl.firstChild.classList.remove([...nodeEl.firstChild.classList].pop());
                 }
-                nodeEl.firstChild.classList.add(`svg-icon-${element.querySelector('img').alt}`);
+                nodeEl.firstChild.classList.add(`${iconClsPrefix}-${element.querySelector('img').alt}`);
             });
 
         setActiveIcon(icons, icons.querySelector('.icon'));
@@ -137,19 +191,21 @@ Array.from(iconContainer.children).forEach((element) => {
 
         // display modal
         modal.style.display = 'block';
-    });
 
-    // copy class
-    element.querySelector('div.copy-btn').addEventListener('click', (e) => {
-        e.stopPropagation();
-        const clsName = e.target.className;
-        const iconAlt = e.target.closest('li').querySelector('img').alt;
-        const iconCls = `svg-icon svg-icon-${iconAlt}`;
-        navigator.clipboard.writeText(iconCls);
+        // copy class
+        element.querySelector('div.copy-btn').addEventListener('click', (e) => {
+            e.stopPropagation();
+            const clsName = e.target.className;
+            const iconAlt = e.target.closest('li').querySelector('img').alt;
+            const iconCls = `svg-icon ${iconClsPrefix}-${iconAlt}`;
+            navigator.clipboard.writeText(iconCls);
 
-        e.target.className = 'svg-icon svg-icon-check';
-        setTimeout(() => {
-            e.target.className = clsName;
-        }, 1000);
-    });
-});
+            e.target.className = 'svg-icon svg-icon-check';
+            setTimeout(() => {
+                e.target.className = clsName;
+            }, 1000);
+        });
+    }
+};
+
+iconContainer.addEventListener('click', (e) => iconContainerHandler(e));

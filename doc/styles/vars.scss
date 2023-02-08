@@ -1,12 +1,15 @@
 $base-color : #1E3B4C;
 $base-color-dark : #112B39;
 $base-color-light : #3D6780;
-$active-color-tec: #9A2D2A;
 $active-color-vdk: #3D73B4;
 $active-color-inter: #F18716;
 
 // return path to icon directory
 @function get-resource-path($path, $poolName) {
+    @if $path == 'font-awesome' {
+        @return '../../resources/font-awesome';
+    }
+
     @return '../../resources/images/icon';
 }
 

@@ -5,28 +5,37 @@ html(lang="en")
         link(rel="stylesheet", href="./styles/icons.css")
         link(rel="stylesheet", href="./styles/index.css")
         link(rel="icon", href="../resources/images/icon/star_16px.svg")
+        script 
+            - const str = `window.icons = {project: [${listItems.map(el => JSON.stringify(el)).join(', ')}],fontAwesome: [${faListItems.map(el => JSON.stringify(el)).join(', ')}]}`
+            != str
 
     body
         div.icon_pack-wrapper
 
-            span.search-wrapper
-                input(type="text", class="search", placeholder="Search icon")
+            .search-container 
+                span.search-wrapper
+                    input(type="text", class="search", placeholder="Search icon")
 
-                - var classes = ['search-state', 'prevent-select']
-                span(class=classes) /
+                    - var classes = ['search-state', 'prevent-select']
+                    span(class=classes) /
+
+                .icons-pack
+                    span.active Project 
+                    span Font awesome
+
+                button.btn-show-icons Показать все 
+                    span.btn-show-icons--count
+
+            template#icon-list-item
+                li
+                    img
+                    p
+
+                    div.copy-btn
+                        - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
+                        div(class=classes)
 
             ul.icon-container
-                mixin listItem(item)
-                    li
-                        img(src=item.source, alt=item.alt)
-                        p= item.name
-
-                        div.copy-btn
-                            - var classes = ['svg-icon', 'svg-icon-copy', 'svg-icon-bg-black']
-                            div(class=classes)
-
-                each val, idx in listItems
-                    +listItem(val)
 
         div.icon-modal
             div.modal-content

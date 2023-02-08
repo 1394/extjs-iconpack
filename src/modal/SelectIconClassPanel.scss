@@ -1,0 +1,34 @@
+.SelectIconClassPanel {
+  .x-btn-default-small {
+    background-color: transparent;
+    padding: 2px;
+    border-color: lightgray;
+  }
+  .x-btn-icon-el-default-small {
+    min-height: 26px;
+    min-width: 26px;
+  }
+  .svg-icon {
+    background-color: $base-color;
+  }
+  .x-table-layout {
+    padding-left: 16px;
+  }
+  .x-autocontainer-innerCt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    grid-auto-rows: min-content;
+  }
+  .icon-pack-grid-btn {
+    .x-btn-button-default-small {
+        display: grid;
+        grid-template-columns: 24px 1fr 24px;
+        align-items: center;
+    }
+  }
+  .icon-pack-search {
+    display: flex;
+    align-items: center;
+  }
+}
