@@ -6756,6 +6756,357 @@
   background-image: url(../../resources/images/icon/drag-point-24px.svg) !important;
 }
 
+.svg-icon-work-documents-spku {
+  mask-image: url(../../resources/images/icon/work-documents-spku.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work-documents-spku.svg) !important;
+}
+
+.sigma .x-tool-work-documents-spku {
+  mask-image: url(../../resources/images/icon/work-documents-spku.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work-documents-spku.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-work-documents-spku:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-work-documents-spku {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-work-documents-spku {
+  background-image: url(../../resources/images/icon/work-documents-spku.svg) !important;
+}
+
+.svg-icon-bank-statement-items {
+  mask-image: url(../../resources/images/icon/bank-statement-items.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/bank-statement-items.svg) !important;
+}
+
+.sigma .x-tool-bank-statement-items {
+  mask-image: url(../../resources/images/icon/bank-statement-items.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/bank-statement-items.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-bank-statement-items:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-bank-statement-items {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-bank-statement-items {
+  background-image: url(../../resources/images/icon/bank-statement-items.svg) !important;
+}
+
+.svg-icon-bank-statement-journal {
+  mask-image: url(../../resources/images/icon/bank-statement-journal.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/bank-statement-journal.svg) !important;
+}
+
+.sigma .x-tool-bank-statement-journal {
+  mask-image: url(../../resources/images/icon/bank-statement-journal.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/bank-statement-journal.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-bank-statement-journal:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-bank-statement-journal {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-bank-statement-journal {
+  background-image: url(../../resources/images/icon/bank-statement-journal.svg) !important;
+}
+
+.svg-icon-correction-log-short {
+  mask-image: url(../../resources/images/icon/correction-log-short.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/correction-log-short.svg) !important;
+}
+
+.sigma .x-tool-correction-log-short {
+  mask-image: url(../../resources/images/icon/correction-log-short.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/correction-log-short.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-correction-log-short:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-correction-log-short {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-correction-log-short {
+  background-image: url(../../resources/images/icon/correction-log-short.svg) !important;
+}
+
+.svg-icon-correction-log-spky {
+  mask-image: url(../../resources/images/icon/correction-log-spky.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/correction-log-spky.svg) !important;
+}
+
+.sigma .x-tool-correction-log-spky {
+  mask-image: url(../../resources/images/icon/correction-log-spky.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/correction-log-spky.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-correction-log-spky:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-correction-log-spky {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-correction-log-spky {
+  background-image: url(../../resources/images/icon/correction-log-spky.svg) !important;
+}
+
+.svg-icon-court_cases {
+  mask-image: url(../../resources/images/icon/court_cases.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/court_cases.svg) !important;
+}
+
+.sigma .x-tool-court_cases {
+  mask-image: url(../../resources/images/icon/court_cases.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/court_cases.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-court_cases:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-court_cases {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-court_cases {
+  background-image: url(../../resources/images/icon/court_cases.svg) !important;
+}
+
+.svg-icon-debt-reconciliation-acts {
+  mask-image: url(../../resources/images/icon/debt-reconciliation-acts.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/debt-reconciliation-acts.svg) !important;
+}
+
+.sigma .x-tool-debt-reconciliation-acts {
+  mask-image: url(../../resources/images/icon/debt-reconciliation-acts.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/debt-reconciliation-acts.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-debt-reconciliation-acts:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-debt-reconciliation-acts {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-debt-reconciliation-acts {
+  background-image: url(../../resources/images/icon/debt-reconciliation-acts.svg) !important;
+}
+
+.svg-icon-expanded-correction-log {
+  mask-image: url(../../resources/images/icon/expanded-correction-log.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/expanded-correction-log.svg) !important;
+}
+
+.sigma .x-tool-expanded-correction-log {
+  mask-image: url(../../resources/images/icon/expanded-correction-log.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/expanded-correction-log.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-expanded-correction-log:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-expanded-correction-log {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-expanded-correction-log {
+  background-image: url(../../resources/images/icon/expanded-correction-log.svg) !important;
+}
+
+.svg-icon-payment-adjustment {
+  mask-image: url(../../resources/images/icon/payment-adjustment.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/payment-adjustment.svg) !important;
+}
+
+.sigma .x-tool-payment-adjustment {
+  mask-image: url(../../resources/images/icon/payment-adjustment.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/payment-adjustment.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-payment-adjustment:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-payment-adjustment {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-payment-adjustment {
+  background-image: url(../../resources/images/icon/payment-adjustment.svg) !important;
+}
+
+.svg-icon-payments {
+  mask-image: url(../../resources/images/icon/payments.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/payments.svg) !important;
+}
+
+.sigma .x-tool-payments {
+  mask-image: url(../../resources/images/icon/payments.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/payments.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-payments:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-payments {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-payments {
+  background-image: url(../../resources/images/icon/payments.svg) !important;
+}
+
+.svg-icon-reconciliation-act {
+  mask-image: url(../../resources/images/icon/reconciliation-act.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/reconciliation-act.svg) !important;
+}
+
+.sigma .x-tool-reconciliation-act {
+  mask-image: url(../../resources/images/icon/reconciliation-act.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/reconciliation-act.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-reconciliation-act:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-reconciliation-act {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-reconciliation-act {
+  background-image: url(../../resources/images/icon/reconciliation-act.svg) !important;
+}
+
+.svg-icon-work_rsd {
+  mask-image: url(../../resources/images/icon/work_rsd.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work_rsd.svg) !important;
+}
+
+.sigma .x-tool-work_rsd {
+  mask-image: url(../../resources/images/icon/work_rsd.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work_rsd.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-work_rsd:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-work_rsd {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-work_rsd {
+  background-image: url(../../resources/images/icon/work_rsd.svg) !important;
+}
+
+.svg-icon-work-payment {
+  mask-image: url(../../resources/images/icon/work-payment.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work-payment.svg) !important;
+}
+
+.sigma .x-tool-work-payment {
+  mask-image: url(../../resources/images/icon/work-payment.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work-payment.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-work-payment:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-work-payment {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-work-payment {
+  background-image: url(../../resources/images/icon/work-payment.svg) !important;
+}
+
 .x-edge .svg-icon-add {
   background-size: 100%;
 }
