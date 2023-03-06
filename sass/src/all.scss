@@ -251,7 +251,20 @@ $icon-list: (
 	done-all-2: "done-all-2",
     drag-point-16px: "drag-point-16px",
     drag-point-20px: "drag-point-20px",
-    drag-point-24px: "drag-point-24px"
+    drag-point-24px: "drag-point-24px",
+    work-documents-spku: "work-documents-spku",
+    bank-statement-items: "bank-statement-items",
+	bank-statement-journal: "bank-statement-journal",
+    correction-log-short: "correction-log-short",
+	correction-log-spky: "correction-log-spky",
+    court_cases: "court_cases",
+	debt-reconciliation-acts: "debt-reconciliation-acts",
+	expanded-correction-log: "expanded-correction-log",
+	payment-adjustment: "payment-adjustment",
+	payments: "payments",
+	reconciliation-act: "reconciliation-act",
+	work_rsd: "work_rsd",
+	work-payment: "work-payment"
 );
 
 @mixin svg-icon-mask($color) {
