@@ -264,7 +264,14 @@ $icon-list: (
 	payments: "payments",
 	reconciliation-act: "reconciliation-act",
 	work_rsd: "work_rsd",
-	work-payment: "work-payment"
+	work-payment: "work-payment",
+	tasks-user: "tasks-user",
+	process-approval: "process-approval",
+	registries-dz: "registries-dz",
+	document-packages-dz: "document-packages-dz",
+	work-dz: "work-dz",
+	restriction-schedule: "restriction-schedule",
+	report-dz: "report-dz"
 );
 
 @mixin svg-icon-mask($color) {

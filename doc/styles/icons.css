@@ -7107,6 +7107,195 @@
   background-image: url(../../resources/images/icon/work-payment.svg) !important;
 }
 
+.svg-icon-tasks-user {
+  mask-image: url(../../resources/images/icon/tasks-user.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/tasks-user.svg) !important;
+}
+
+.sigma .x-tool-tasks-user {
+  mask-image: url(../../resources/images/icon/tasks-user.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/tasks-user.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-tasks-user:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-tasks-user {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-tasks-user {
+  background-image: url(../../resources/images/icon/tasks-user.svg) !important;
+}
+
+.svg-icon-process-approval {
+  mask-image: url(../../resources/images/icon/process-approval.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/process-approval.svg) !important;
+}
+
+.sigma .x-tool-process-approval {
+  mask-image: url(../../resources/images/icon/process-approval.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/process-approval.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-process-approval:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-process-approval {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-process-approval {
+  background-image: url(../../resources/images/icon/process-approval.svg) !important;
+}
+
+.svg-icon-registries-dz {
+  mask-image: url(../../resources/images/icon/registries-dz.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/registries-dz.svg) !important;
+}
+
+.sigma .x-tool-registries-dz {
+  mask-image: url(../../resources/images/icon/registries-dz.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/registries-dz.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-registries-dz:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-registries-dz {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-registries-dz {
+  background-image: url(../../resources/images/icon/registries-dz.svg) !important;
+}
+
+.svg-icon-document-packages-dz {
+  mask-image: url(../../resources/images/icon/document-packages-dz.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/document-packages-dz.svg) !important;
+}
+
+.sigma .x-tool-document-packages-dz {
+  mask-image: url(../../resources/images/icon/document-packages-dz.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/document-packages-dz.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-document-packages-dz:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-document-packages-dz {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-document-packages-dz {
+  background-image: url(../../resources/images/icon/document-packages-dz.svg) !important;
+}
+
+.svg-icon-work-dz {
+  mask-image: url(../../resources/images/icon/work-dz.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work-dz.svg) !important;
+}
+
+.sigma .x-tool-work-dz {
+  mask-image: url(../../resources/images/icon/work-dz.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work-dz.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-work-dz:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-work-dz {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-work-dz {
+  background-image: url(../../resources/images/icon/work-dz.svg) !important;
+}
+
+.svg-icon-restriction-schedule {
+  mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+}
+
+.sigma .x-tool-restriction-schedule {
+  mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-restriction-schedule:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-restriction-schedule {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-restriction-schedule {
+  background-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+}
+
+.svg-icon-report-dz {
+  mask-image: url(../../resources/images/icon/report-dz.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/report-dz.svg) !important;
+}
+
+.sigma .x-tool-report-dz {
+  mask-image: url(../../resources/images/icon/report-dz.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/report-dz.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-report-dz:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-report-dz {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-report-dz {
+  background-image: url(../../resources/images/icon/report-dz.svg) !important;
+}
+
 .x-edge .svg-icon-add {
   background-size: 100%;
 }
