@@ -277,6 +277,13 @@ Ext.define('Iconpack.modal.Icons', {
         {value: 'svg-icon svg-icon-reconciliation-act', description: 'reconciliation-act'},
         {value: 'svg-icon svg-icon-work_rsd', description: 'work_rsd'},
         {value: 'svg-icon svg-icon-work-payment', description: 'work-payment'},
+        {value: 'svg-icon svg-icon-tasks-user', description: 'tasks-user'},
+        {value: 'svg-icon svg-icon-process-approval', description: 'process-approval'},
+        {value: 'svg-icon svg-icon-registries-dz', description: 'registries-dz'},
+        {value: 'svg-icon svg-icon-document-packages-dz', description: 'document-packages-dz'},
+        {value: 'svg-icon svg-icon-work-dz', description: 'work-dz'},
+        {value: 'svg-icon svg-icon-restriction-schedule', description: 'restriction-schedule'},
+        {value: 'svg-icon svg-icon-report-dz', description: 'report-dz'},
         // InsertIcons.end
     ],
 
