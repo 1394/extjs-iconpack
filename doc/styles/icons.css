@@ -7053,21 +7053,21 @@
   background-image: url(../../resources/images/icon/reconciliation-act.svg) !important;
 }
 
-.svg-icon-work_rsd {
-  mask-image: url(../../resources/images/icon/work_rsd.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/work_rsd.svg) !important;
+.svg-icon-work-rsd {
+  mask-image: url(../../resources/images/icon/work-rsd.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work-rsd.svg) !important;
 }
 
-.sigma .x-tool-work_rsd {
-  mask-image: url(../../resources/images/icon/work_rsd.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/work_rsd.svg) !important;
+.sigma .x-tool-work-rsd {
+  mask-image: url(../../resources/images/icon/work-rsd.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/work-rsd.svg) !important;
   background-color: white !important;
 }
-.sigma .x-tool-work_rsd:before {
+.sigma .x-tool-work-rsd:before {
   content: "";
 }
 
-.x-edge.sigma .x-tool-work_rsd {
+.x-edge.sigma .x-tool-work-rsd {
   background-color: inherit !important;
 }
 .x-edge .svg-icon {
@@ -7076,8 +7076,8 @@
   background-size: 75%;
   background-color: inherit !important;
 }
-.x-edge .svg-icon.svg-icon-work_rsd {
-  background-image: url(../../resources/images/icon/work_rsd.svg) !important;
+.x-edge .svg-icon.svg-icon-work-rsd {
+  background-image: url(../../resources/images/icon/work-rsd.svg) !important;
 }
 
 .svg-icon-work-payment {
@@ -7294,6 +7294,870 @@
 }
 .x-edge .svg-icon.svg-icon-report-dz {
   background-image: url(../../resources/images/icon/report-dz.svg) !important;
+}
+
+.svg-icon-fact-check {
+  mask-image: url(../../resources/images/icon/fact-check.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/fact-check.svg) !important;
+}
+
+.sigma .x-tool-fact-check {
+  mask-image: url(../../resources/images/icon/fact-check.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/fact-check.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-fact-check:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-fact-check {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-fact-check {
+  background-image: url(../../resources/images/icon/fact-check.svg) !important;
+}
+
+.svg-icon-library-books {
+  mask-image: url(../../resources/images/icon/library-books.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/library-books.svg) !important;
+}
+
+.sigma .x-tool-library-books {
+  mask-image: url(../../resources/images/icon/library-books.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/library-books.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-library-books:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-library-books {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-library-books {
+  background-image: url(../../resources/images/icon/library-books.svg) !important;
+}
+
+.svg-icon-document-download-stamp {
+  mask-image: url(../../resources/images/icon/document-download-stamp.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/document-download-stamp.svg) !important;
+}
+
+.sigma .x-tool-document-download-stamp {
+  mask-image: url(../../resources/images/icon/document-download-stamp.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/document-download-stamp.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-document-download-stamp:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-document-download-stamp {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-document-download-stamp {
+  background-image: url(../../resources/images/icon/document-download-stamp.svg) !important;
+}
+
+.svg-icon-downward-2 {
+  mask-image: url(../../resources/images/icon/downward-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/downward-2.svg) !important;
+}
+
+.sigma .x-tool-downward-2 {
+  mask-image: url(../../resources/images/icon/downward-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/downward-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-downward-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-downward-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-downward-2 {
+  background-image: url(../../resources/images/icon/downward-2.svg) !important;
+}
+
+.svg-icon-upward-2 {
+  mask-image: url(../../resources/images/icon/upward-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/upward-2.svg) !important;
+}
+
+.sigma .x-tool-upward-2 {
+  mask-image: url(../../resources/images/icon/upward-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/upward-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-upward-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-upward-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-upward-2 {
+  background-image: url(../../resources/images/icon/upward-2.svg) !important;
+}
+
+.svg-icon-unfold-less {
+  mask-image: url(../../resources/images/icon/unfold-less.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less.svg) !important;
+}
+
+.sigma .x-tool-unfold-less {
+  mask-image: url(../../resources/images/icon/unfold-less.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-less:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-less {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-less {
+  background-image: url(../../resources/images/icon/unfold-less.svg) !important;
+}
+
+.svg-icon-unfold-less-6 {
+  mask-image: url(../../resources/images/icon/unfold-less-6.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-6.svg) !important;
+}
+
+.sigma .x-tool-unfold-less-6 {
+  mask-image: url(../../resources/images/icon/unfold-less-6.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-6.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-less-6:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-less-6 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-less-6 {
+  background-image: url(../../resources/images/icon/unfold-less-6.svg) !important;
+}
+
+.svg-icon-unfold-more-6 {
+  mask-image: url(../../resources/images/icon/unfold-more-6.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-6.svg) !important;
+}
+
+.sigma .x-tool-unfold-more-6 {
+  mask-image: url(../../resources/images/icon/unfold-more-6.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-6.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-more-6:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-more-6 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-more-6 {
+  background-image: url(../../resources/images/icon/unfold-more-6.svg) !important;
+}
+
+.svg-icon-unfold-less-5 {
+  mask-image: url(../../resources/images/icon/unfold-less-5.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-5.svg) !important;
+}
+
+.sigma .x-tool-unfold-less-5 {
+  mask-image: url(../../resources/images/icon/unfold-less-5.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-5.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-less-5:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-less-5 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-less-5 {
+  background-image: url(../../resources/images/icon/unfold-less-5.svg) !important;
+}
+
+.svg-icon-unfold-more-5 {
+  mask-image: url(../../resources/images/icon/unfold-more-5.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-5.svg) !important;
+}
+
+.sigma .x-tool-unfold-more-5 {
+  mask-image: url(../../resources/images/icon/unfold-more-5.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-5.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-more-5:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-more-5 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-more-5 {
+  background-image: url(../../resources/images/icon/unfold-more-5.svg) !important;
+}
+
+.svg-icon-unfold-more-2 {
+  mask-image: url(../../resources/images/icon/unfold-more-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-2.svg) !important;
+}
+
+.sigma .x-tool-unfold-more-2 {
+  mask-image: url(../../resources/images/icon/unfold-more-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-more-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-more-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-more-2 {
+  background-image: url(../../resources/images/icon/unfold-more-2.svg) !important;
+}
+
+.svg-icon-unfold-less-2 {
+  mask-image: url(../../resources/images/icon/unfold-less-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-2.svg) !important;
+}
+
+.sigma .x-tool-unfold-less-2 {
+  mask-image: url(../../resources/images/icon/unfold-less-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-less-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-less-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-less-2 {
+  background-image: url(../../resources/images/icon/unfold-less-2.svg) !important;
+}
+
+.svg-icon-unfold-less-3 {
+  mask-image: url(../../resources/images/icon/unfold-less-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-3.svg) !important;
+}
+
+.sigma .x-tool-unfold-less-3 {
+  mask-image: url(../../resources/images/icon/unfold-less-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-3.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-less-3:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-less-3 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-less-3 {
+  background-image: url(../../resources/images/icon/unfold-less-3.svg) !important;
+}
+
+.svg-icon-unfold-more-4 {
+  mask-image: url(../../resources/images/icon/unfold-more-4.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-4.svg) !important;
+}
+
+.sigma .x-tool-unfold-more-4 {
+  mask-image: url(../../resources/images/icon/unfold-more-4.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-4.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-more-4:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-more-4 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-more-4 {
+  background-image: url(../../resources/images/icon/unfold-more-4.svg) !important;
+}
+
+.svg-icon-unfold-less-4 {
+  mask-image: url(../../resources/images/icon/unfold-less-4.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-4.svg) !important;
+}
+
+.sigma .x-tool-unfold-less-4 {
+  mask-image: url(../../resources/images/icon/unfold-less-4.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-less-4.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-less-4:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-less-4 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-less-4 {
+  background-image: url(../../resources/images/icon/unfold-less-4.svg) !important;
+}
+
+.svg-icon-unfold-more-3 {
+  mask-image: url(../../resources/images/icon/unfold-more-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-3.svg) !important;
+}
+
+.sigma .x-tool-unfold-more-3 {
+  mask-image: url(../../resources/images/icon/unfold-more-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more-3.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-more-3:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-more-3 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-more-3 {
+  background-image: url(../../resources/images/icon/unfold-more-3.svg) !important;
+}
+
+.svg-icon-unfold-more {
+  mask-image: url(../../resources/images/icon/unfold-more.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more.svg) !important;
+}
+
+.sigma .x-tool-unfold-more {
+  mask-image: url(../../resources/images/icon/unfold-more.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/unfold-more.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-unfold-more:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-unfold-more {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-unfold-more {
+  background-image: url(../../resources/images/icon/unfold-more.svg) !important;
+}
+
+.svg-icon-filter-alt {
+  mask-image: url(../../resources/images/icon/filter-alt.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt.svg) !important;
+}
+
+.sigma .x-tool-filter-alt {
+  mask-image: url(../../resources/images/icon/filter-alt.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-filter-alt:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-filter-alt {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-filter-alt {
+  background-image: url(../../resources/images/icon/filter-alt.svg) !important;
+}
+
+.svg-icon-filter-alt-off {
+  mask-image: url(../../resources/images/icon/filter-alt-off.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-off.svg) !important;
+}
+
+.sigma .x-tool-filter-alt-off {
+  mask-image: url(../../resources/images/icon/filter-alt-off.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-off.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-filter-alt-off:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-filter-alt-off {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-filter-alt-off {
+  background-image: url(../../resources/images/icon/filter-alt-off.svg) !important;
+}
+
+.svg-icon-filter-alt-3 {
+  mask-image: url(../../resources/images/icon/filter-alt-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-3.svg) !important;
+}
+
+.sigma .x-tool-filter-alt-3 {
+  mask-image: url(../../resources/images/icon/filter-alt-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-3.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-filter-alt-3:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-filter-alt-3 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-filter-alt-3 {
+  background-image: url(../../resources/images/icon/filter-alt-3.svg) !important;
+}
+
+.svg-icon-filter-alt-off-3 {
+  mask-image: url(../../resources/images/icon/filter-alt-off-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-off-3.svg) !important;
+}
+
+.sigma .x-tool-filter-alt-off-3 {
+  mask-image: url(../../resources/images/icon/filter-alt-off-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-off-3.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-filter-alt-off-3:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-filter-alt-off-3 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-filter-alt-off-3 {
+  background-image: url(../../resources/images/icon/filter-alt-off-3.svg) !important;
+}
+
+.svg-icon-filter-alt-2 {
+  mask-image: url(../../resources/images/icon/filter-alt-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-2.svg) !important;
+}
+
+.sigma .x-tool-filter-alt-2 {
+  mask-image: url(../../resources/images/icon/filter-alt-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-filter-alt-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-filter-alt-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-filter-alt-2 {
+  background-image: url(../../resources/images/icon/filter-alt-2.svg) !important;
+}
+
+.svg-icon-filter-alt-off-2 {
+  mask-image: url(../../resources/images/icon/filter-alt-off-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-off-2.svg) !important;
+}
+
+.sigma .x-tool-filter-alt-off-2 {
+  mask-image: url(../../resources/images/icon/filter-alt-off-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-alt-off-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-filter-alt-off-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-filter-alt-off-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-filter-alt-off-2 {
+  background-image: url(../../resources/images/icon/filter-alt-off-2.svg) !important;
+}
+
+.svg-icon-filter-off {
+  mask-image: url(../../resources/images/icon/filter-off.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-off.svg) !important;
+}
+
+.sigma .x-tool-filter-off {
+  mask-image: url(../../resources/images/icon/filter-off.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/filter-off.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-filter-off:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-filter-off {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-filter-off {
+  background-image: url(../../resources/images/icon/filter-off.svg) !important;
+}
+
+.svg-icon-visibility {
+  mask-image: url(../../resources/images/icon/visibility.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/visibility.svg) !important;
+}
+
+.sigma .x-tool-visibility {
+  mask-image: url(../../resources/images/icon/visibility.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/visibility.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-visibility:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-visibility {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-visibility {
+  background-image: url(../../resources/images/icon/visibility.svg) !important;
+}
+
+.svg-icon-visibility_off {
+  mask-image: url(../../resources/images/icon/visibility_off.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/visibility_off.svg) !important;
+}
+
+.sigma .x-tool-visibility_off {
+  mask-image: url(../../resources/images/icon/visibility_off.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/visibility_off.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-visibility_off:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-visibility_off {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-visibility_off {
+  background-image: url(../../resources/images/icon/visibility_off.svg) !important;
+}
+
+.svg-icon-expand-2 {
+  mask-image: url(../../resources/images/icon/expand-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/expand-2.svg) !important;
+}
+
+.sigma .x-tool-expand-2 {
+  mask-image: url(../../resources/images/icon/expand-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/expand-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-expand-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-expand-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-expand-2 {
+  background-image: url(../../resources/images/icon/expand-2.svg) !important;
+}
+
+.svg-icon-collaps {
+  mask-image: url(../../resources/images/icon/collaps.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/collaps.svg) !important;
+}
+
+.sigma .x-tool-collaps {
+  mask-image: url(../../resources/images/icon/collaps.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/collaps.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-collaps:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-collaps {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-collaps {
+  background-image: url(../../resources/images/icon/collaps.svg) !important;
+}
+
+.svg-icon-more {
+  mask-image: url(../../resources/images/icon/more.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/more.svg) !important;
+}
+
+.sigma .x-tool-more {
+  mask-image: url(../../resources/images/icon/more.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/more.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-more:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-more {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-more {
+  background-image: url(../../resources/images/icon/more.svg) !important;
+}
+
+.svg-icon-less {
+  mask-image: url(../../resources/images/icon/less.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/less.svg) !important;
+}
+
+.sigma .x-tool-less {
+  mask-image: url(../../resources/images/icon/less.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/less.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-less:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-less {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-less {
+  background-image: url(../../resources/images/icon/less.svg) !important;
+}
+
+.svg-icon-down {
+  mask-image: url(../../resources/images/icon/down.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/down.svg) !important;
+}
+
+.sigma .x-tool-down {
+  mask-image: url(../../resources/images/icon/down.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/down.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-down:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-down {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-down {
+  background-image: url(../../resources/images/icon/down.svg) !important;
+}
+
+.svg-icon-up {
+  mask-image: url(../../resources/images/icon/up.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/up.svg) !important;
+}
+
+.sigma .x-tool-up {
+  mask-image: url(../../resources/images/icon/up.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/up.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-up:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-up {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-up {
+  background-image: url(../../resources/images/icon/up.svg) !important;
 }
 
 .x-edge .svg-icon-add {
