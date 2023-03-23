@@ -7134,60 +7134,6 @@
   background-image: url(../../resources/images/icon/tasks-user.svg) !important;
 }
 
-.svg-icon-process-approval {
-  mask-image: url(../../resources/images/icon/process-approval.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/process-approval.svg) !important;
-}
-
-.sigma .x-tool-process-approval {
-  mask-image: url(../../resources/images/icon/process-approval.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/process-approval.svg) !important;
-  background-color: white !important;
-}
-.sigma .x-tool-process-approval:before {
-  content: "";
-}
-
-.x-edge.sigma .x-tool-process-approval {
-  background-color: inherit !important;
-}
-.x-edge .svg-icon {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75%;
-  background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-process-approval {
-  background-image: url(../../resources/images/icon/process-approval.svg) !important;
-}
-
-.svg-icon-registries-dz {
-  mask-image: url(../../resources/images/icon/registries-dz.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/registries-dz.svg) !important;
-}
-
-.sigma .x-tool-registries-dz {
-  mask-image: url(../../resources/images/icon/registries-dz.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/registries-dz.svg) !important;
-  background-color: white !important;
-}
-.sigma .x-tool-registries-dz:before {
-  content: "";
-}
-
-.x-edge.sigma .x-tool-registries-dz {
-  background-color: inherit !important;
-}
-.x-edge .svg-icon {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75%;
-  background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-registries-dz {
-  background-image: url(../../resources/images/icon/registries-dz.svg) !important;
-}
-
 .svg-icon-document-packages-dz {
   mask-image: url(../../resources/images/icon/document-packages-dz.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/document-packages-dz.svg) !important;
@@ -7213,33 +7159,6 @@
 }
 .x-edge .svg-icon.svg-icon-document-packages-dz {
   background-image: url(../../resources/images/icon/document-packages-dz.svg) !important;
-}
-
-.svg-icon-work-dz {
-  mask-image: url(../../resources/images/icon/work-dz.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/work-dz.svg) !important;
-}
-
-.sigma .x-tool-work-dz {
-  mask-image: url(../../resources/images/icon/work-dz.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/work-dz.svg) !important;
-  background-color: white !important;
-}
-.sigma .x-tool-work-dz:before {
-  content: "";
-}
-
-.x-edge.sigma .x-tool-work-dz {
-  background-color: inherit !important;
-}
-.x-edge .svg-icon {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75%;
-  background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-work-dz {
-  background-image: url(../../resources/images/icon/work-dz.svg) !important;
 }
 
 .svg-icon-restriction-schedule {
@@ -7429,33 +7348,6 @@
 }
 .x-edge .svg-icon.svg-icon-upward-2 {
   background-image: url(../../resources/images/icon/upward-2.svg) !important;
-}
-
-.svg-icon-unfold-less {
-  mask-image: url(../../resources/images/icon/unfold-less.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/unfold-less.svg) !important;
-}
-
-.sigma .x-tool-unfold-less {
-  mask-image: url(../../resources/images/icon/unfold-less.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/unfold-less.svg) !important;
-  background-color: white !important;
-}
-.sigma .x-tool-unfold-less:before {
-  content: "";
-}
-
-.x-edge.sigma .x-tool-unfold-less {
-  background-color: inherit !important;
-}
-.x-edge .svg-icon {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75%;
-  background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-unfold-less {
-  background-image: url(../../resources/images/icon/unfold-less.svg) !important;
 }
 
 .svg-icon-unfold-less-6 {
@@ -7917,33 +7809,6 @@
   background-image: url(../../resources/images/icon/filter-alt-off-2.svg) !important;
 }
 
-.svg-icon-filter-off {
-  mask-image: url(../../resources/images/icon/filter-off.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/filter-off.svg) !important;
-}
-
-.sigma .x-tool-filter-off {
-  mask-image: url(../../resources/images/icon/filter-off.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/filter-off.svg) !important;
-  background-color: white !important;
-}
-.sigma .x-tool-filter-off:before {
-  content: "";
-}
-
-.x-edge.sigma .x-tool-filter-off {
-  background-color: inherit !important;
-}
-.x-edge .svg-icon {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75%;
-  background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-filter-off {
-  background-image: url(../../resources/images/icon/filter-off.svg) !important;
-}
-
 .svg-icon-visibility {
   mask-image: url(../../resources/images/icon/visibility.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/visibility.svg) !important;
@@ -8158,6 +8023,492 @@
 }
 .x-edge .svg-icon.svg-icon-up {
   background-image: url(../../resources/images/icon/up.svg) !important;
+}
+
+.svg-icon-roster {
+  mask-image: url(../../resources/images/icon/roster.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/roster.svg) !important;
+}
+
+.sigma .x-tool-roster {
+  mask-image: url(../../resources/images/icon/roster.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/roster.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-roster:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-roster {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-roster {
+  background-image: url(../../resources/images/icon/roster.svg) !important;
+}
+
+.svg-icon-wysiwyg {
+  mask-image: url(../../resources/images/icon/ wysiwyg.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ wysiwyg.svg) !important;
+}
+
+.sigma .x-tool-wysiwyg {
+  mask-image: url(../../resources/images/icon/ wysiwyg.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ wysiwyg.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-wysiwyg:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-wysiwyg {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-wysiwyg {
+  background-image: url(../../resources/images/icon/ wysiwyg.svg) !important;
+}
+
+.svg-icon-description {
+  mask-image: url(../../resources/images/icon/description.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/description.svg) !important;
+}
+
+.sigma .x-tool-description {
+  mask-image: url(../../resources/images/icon/description.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/description.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-description:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-description {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-description {
+  background-image: url(../../resources/images/icon/description.svg) !important;
+}
+
+.svg-icon-report_search {
+  mask-image: url(../../resources/images/icon/report_search.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/report_search.svg) !important;
+}
+
+.sigma .x-tool-report_search {
+  mask-image: url(../../resources/images/icon/report_search.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/report_search.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-report_search:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-report_search {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-report_search {
+  background-image: url(../../resources/images/icon/report_search.svg) !important;
+}
+
+.svg-icon-inset-2 {
+  mask-image: url(../../resources/images/icon/ inset-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ inset-2.svg) !important;
+}
+
+.sigma .x-tool-inset-2 {
+  mask-image: url(../../resources/images/icon/ inset-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ inset-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-inset-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-inset-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-inset-2 {
+  background-image: url(../../resources/images/icon/ inset-2.svg) !important;
+}
+
+.svg-icon-itp-2 {
+  mask-image: url(../../resources/images/icon/ itp-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ itp-2.svg) !important;
+}
+
+.sigma .x-tool-itp-2 {
+  mask-image: url(../../resources/images/icon/ itp-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ itp-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-itp-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-itp-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-itp-2 {
+  background-image: url(../../resources/images/icon/ itp-2.svg) !important;
+}
+
+.svg-icon-meter-2 {
+  mask-image: url(../../resources/images/icon/meter-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/meter-2.svg) !important;
+}
+
+.sigma .x-tool-meter-2 {
+  mask-image: url(../../resources/images/icon/meter-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/meter-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-meter-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-meter-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-meter-2 {
+  background-image: url(../../resources/images/icon/meter-2.svg) !important;
+}
+
+.svg-icon-otp-2 {
+  mask-image: url(../../resources/images/icon/ otp-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ otp-2.svg) !important;
+}
+
+.sigma .x-tool-otp-2 {
+  mask-image: url(../../resources/images/icon/ otp-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ otp-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-otp-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-otp-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-otp-2 {
+  background-image: url(../../resources/images/icon/ otp-2.svg) !important;
+}
+
+.svg-icon-pressure-meter-2 {
+  mask-image: url(../../resources/images/icon/pressure-meter-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/pressure-meter-2.svg) !important;
+}
+
+.sigma .x-tool-pressure-meter-2 {
+  mask-image: url(../../resources/images/icon/pressure-meter-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/pressure-meter-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-pressure-meter-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-pressure-meter-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-pressure-meter-2 {
+  background-image: url(../../resources/images/icon/pressure-meter-2.svg) !important;
+}
+
+.svg-icon-section-2 {
+  mask-image: url(../../resources/images/icon/section-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/section-2.svg) !important;
+}
+
+.sigma .x-tool-section-2 {
+  mask-image: url(../../resources/images/icon/section-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/section-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-section-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-section-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-section-2 {
+  background-image: url(../../resources/images/icon/section-2.svg) !important;
+}
+
+.svg-icon-source-2 {
+  mask-image: url(../../resources/images/icon/source-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/source-2.svg) !important;
+}
+
+.sigma .x-tool-source-2 {
+  mask-image: url(../../resources/images/icon/source-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/source-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-source-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-source-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-source-2 {
+  background-image: url(../../resources/images/icon/source-2.svg) !important;
+}
+
+.svg-icon-thermal-chamber-2 {
+  mask-image: url(../../resources/images/icon/thermal-chamber-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/thermal-chamber-2.svg) !important;
+}
+
+.sigma .x-tool-thermal-chamber-2 {
+  mask-image: url(../../resources/images/icon/thermal-chamber-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/thermal-chamber-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-thermal-chamber-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-thermal-chamber-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-thermal-chamber-2 {
+  background-image: url(../../resources/images/icon/thermal-chamber-2.svg) !important;
+}
+
+.svg-icon-uute-2 {
+  mask-image: url(../../resources/images/icon/uute-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/uute-2.svg) !important;
+}
+
+.sigma .x-tool-uute-2 {
+  mask-image: url(../../resources/images/icon/uute-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/uute-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-uute-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-uute-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-uute-2 {
+  background-image: url(../../resources/images/icon/uute-2.svg) !important;
+}
+
+.svg-icon-ik-2 {
+  mask-image: url(../../resources/images/icon/ik-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ik-2.svg) !important;
+}
+
+.sigma .x-tool-ik-2 {
+  mask-image: url(../../resources/images/icon/ik-2.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/ik-2.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-ik-2:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-ik-2 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-ik-2 {
+  background-image: url(../../resources/images/icon/ik-2.svg) !important;
+}
+
+.svg-icon-to-do-list {
+  mask-image: url(../../resources/images/icon/to-do-list.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/to-do-list.svg) !important;
+}
+
+.sigma .x-tool-to-do-list {
+  mask-image: url(../../resources/images/icon/to-do-list.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/to-do-list.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-to-do-list:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-to-do-list {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-to-do-list {
+  background-image: url(../../resources/images/icon/to-do-list.svg) !important;
+}
+
+.svg-icon-scheme-3 {
+  mask-image: url(../../resources/images/icon/scheme-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/scheme-3.svg) !important;
+}
+
+.sigma .x-tool-scheme-3 {
+  mask-image: url(../../resources/images/icon/scheme-3.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/scheme-3.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-scheme-3:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-scheme-3 {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-scheme-3 {
+  background-image: url(../../resources/images/icon/scheme-3.svg) !important;
+}
+
+.svg-icon-add-check {
+  mask-image: url(../../resources/images/icon/add-check.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/add-check.svg) !important;
+}
+
+.sigma .x-tool-add-check {
+  mask-image: url(../../resources/images/icon/add-check.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/add-check.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-add-check:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-add-check {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-add-check {
+  background-image: url(../../resources/images/icon/add-check.svg) !important;
+}
+
+.svg-icon-all-inbox {
+  mask-image: url(../../resources/images/icon/all-inbox.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/all-inbox.svg) !important;
+}
+
+.sigma .x-tool-all-inbox {
+  mask-image: url(../../resources/images/icon/all-inbox.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/all-inbox.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-all-inbox:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-all-inbox {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-all-inbox {
+  background-image: url(../../resources/images/icon/all-inbox.svg) !important;
 }
 
 .x-edge .svg-icon-add {
