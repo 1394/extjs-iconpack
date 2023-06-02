@@ -35,6 +35,8 @@ module.exports = {
         'new-cap': ['off', {'newIsCap': false}],
         'semi': ['error', 'always'],
         'curly': ['error', 'all'],
+        'space-in-parens': ['error', 'never'],
+        'arrow-spacing': ['error', {'before': true, 'after': true}],
         'comma-dangle': ['error', {
             'arrays': 'never',
             'objects': 'always-multiline',
