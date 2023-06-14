@@ -10,7 +10,7 @@
 		"build-css": "sass doc/styles/vars.scss:doc/styles/icons.css && git add doc/styles ",
 		"build": "node util/index.js",
 		"doc": "npm run build && npm run build-css",
-		"version": "npm run build-css && npm run build && git add doc/index.html && git add src/modal",
+		"version": "npm run build-css && npm run build && git add src/modal",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "npm run build && npx http-server -a 127.0.0.1 -c-1 -o doc"
 	},
