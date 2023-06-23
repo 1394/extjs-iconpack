@@ -2,6 +2,7 @@ const fs = require('fs');
 const pug = require('pug');
 
 const {makeIconList, generateIcons, generateIconStore} = require('./icons');
+const ICON_TYPES = require('./constants');
 
 // paths
 const svgIconsFilename = './sass/src/all.scss';
@@ -12,18 +13,14 @@ const faIconPath = 'resources/font-awesome';
 
 const iconStoreFileName = 'src/modal/Icons.js';
 
-const svgFaIcons = makeIconList(faIconPath, faFilename, 'svg');
-const svgIcons = makeIconList(iconPath, svgIconsFilename, 'svg');
+const svgFaIcons = makeIconList(faIconPath, faFilename, 'svg', ICON_TYPES.fa);
+const svgIcons = makeIconList(iconPath, svgIconsFilename, 'svg', ICON_TYPES.project);
 
 const projectIcons = generateIcons(svgIcons, iconPath, '//IconList.start', '//IconList.end');
 const faIcons = generateIcons(svgFaIcons, faIconPath, '//IconList.start', '//IconList.end');
 
-const iconTypes = {
-    project: 'icon',
-    fa: 'fa',
-};
-generateIconStore(iconStoreFileName, 'InsertIcons', 'svg-icon', projectIcons.icons, iconTypes.project);
-generateIconStore(iconStoreFileName, 'InsertFaIcons', 'svg-fa', faIcons.icons, iconTypes.fa);
+generateIconStore(iconStoreFileName, 'InsertIcons', 'svg-icon', projectIcons.icons, ICON_TYPES.project);
+generateIconStore(iconStoreFileName, 'InsertFaIcons', 'svg-fa', faIcons.icons, ICON_TYPES.fa);
 
 // generate html file
 const compiledFunction = pug.compileFile('doc/pug/index.pug');

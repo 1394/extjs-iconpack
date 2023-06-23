@@ -2,7 +2,35 @@ const fs = require('fs');
 const path = require('path');
 const cwd = process.cwd();
 
-const makeIconList = (iconPath, styleFilename, ext) => {
+const ICON_TYPES = require('./constants');
+
+const aliases = {
+    [ICON_TYPES.project]: {
+        // 'cancel': ['close'],
+        'excel': ['exel'],
+        'arrow-down': ['expand-bottom'],
+        'star-16': ['star_16px'],
+    },
+    [ICON_TYPES.fa]: {
+    },
+};
+
+const addAlias = (files, iconName, iconType) => {
+    //  comprationObj -> {iconName: ['aliasName']}
+    // aliases {comprationObj[]}
+    const rootIconName = aliases[iconType]?.[iconName];
+
+    if (rootIconName) {
+        console.log(rootIconName)
+        const iconNames = aliases[iconType][iconName];
+
+        for (const iName of iconNames) {
+            files.push({key: iName, value: iconName});
+        }
+    }
+};
+
+const makeIconList = (iconPath, styleFilename, ext, iconType) => {
     const files = [];
 
     // read all icon files to get names
@@ -10,11 +38,16 @@ const makeIconList = (iconPath, styleFilename, ext) => {
         .forEach((filename) => {
             const filepath = path.resolve(iconPath, filename);
             const stat = fs.statSync(filepath);
+
             if (!stat.isFile()) {
                 return;
             }
+
             const {name} = path.parse(filename);
-            filename.endsWith(ext) && files.push(name);
+            if (filename.endsWith(ext)) {
+                files.push({key: name, value: name});
+                addAlias(files, name, iconType);
+            };
         });
 
     const styles = fs.readFileSync(styleFilename, {encoding: 'utf8'})
@@ -32,7 +65,7 @@ const makeIconList = (iconPath, styleFilename, ext) => {
     result.end = styles.splice(endIdx, styles.length);
     result.start = styles.splice(0, startIdx + 1);
     // result.content = files.map((file) => `    "${file}",`);
-    result.content = files.map((file) => `    "${file}",`);
+    result.content = files.map((file) => `    "${file.key}": "${file.value}",`);
 
     const icons = result.start.concat(result.content, result.end).join('\n');
 
@@ -70,7 +103,8 @@ const generateIcons = (icons, iconPath) => {
 
     // generate iconList to render pug layout
     const iconList = icons.map((icon) => {
-        const name = icon.split(':')[0].trim();
+        // const name = icon.split(':')[0].trim();
+        const name = icon.value;
         const svgFilename = name;// icon.split(':')[1].replace(/['", ]+/g, '');
         return {
             source: `${iconPath}/${svgFilename}.svg`,
@@ -85,7 +119,7 @@ const generateIcons = (icons, iconPath) => {
     };
 };
 
-const generateIconStore = (iconStoreFileName, marker, prefix, icons, iconTypes) => {
+const generateIconStore = (iconStoreFileName, marker, prefix, icons, iconType) => {
     const file = fs.readFileSync(iconStoreFileName, {encoding: 'utf8'})
         .replace(/[\t\r]+/g, '')
         .split('\n');
@@ -95,8 +129,9 @@ const generateIconStore = (iconStoreFileName, marker, prefix, icons, iconTypes) 
 
     // array of stringify objects
     const storeElements = icons.map((icon) => {
-        const description = icon.split(':')[0].trim();
-        const value = `svg-${iconTypes ||'icon'} ${prefix}-${description}`;
+        // const description = icon.split(':')[0].trim();
+        const description = icon.key;
+        const value = `svg-${iconType ||'icon'} ${prefix}-${description}`;
         return `        {value: \'${value}\', description: \'${description}\'},`;
     });
 
