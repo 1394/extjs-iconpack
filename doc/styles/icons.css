@@ -40784,6 +40784,33 @@
   background-image: url(../../resources/images/icon/excel.svg) !important;
 }
 
+.svg-icon-exel {
+  mask-image: url(../../resources/images/icon/excel.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/excel.svg) !important;
+}
+
+.sigma .x-tool-exel {
+  mask-image: url(../../resources/images/icon/excel.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/excel.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-exel:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-exel {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-exel {
+  background-image: url(../../resources/images/icon/excel.svg) !important;
+}
+
 .svg-icon-executor {
   mask-image: url(../../resources/images/icon/executor.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/executor.svg) !important;
@@ -45398,6 +45425,33 @@
   background-color: inherit !important;
 }
 .x-edge .svg-icon.svg-icon-star-16 {
+  background-image: url(../../resources/images/icon/star-16.svg) !important;
+}
+
+.svg-icon-star_16px {
+  mask-image: url(../../resources/images/icon/star-16.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/star-16.svg) !important;
+}
+
+.sigma .x-tool-star_16px {
+  mask-image: url(../../resources/images/icon/star-16.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/star-16.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-star_16px:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-star_16px {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-star_16px {
   background-image: url(../../resources/images/icon/star-16.svg) !important;
 }
 

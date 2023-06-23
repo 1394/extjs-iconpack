@@ -14,7 +14,7 @@ module.exports = {
         'Coon': 'writable',
     },
     'parserOptions': {
-        ecmaVersion: 8,
+        'ecmaVersion': 'ES2018',
     },
     'rules': {
         'max-len': [
