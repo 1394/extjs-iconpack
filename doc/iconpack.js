@@ -90,11 +90,10 @@ iconPack.addEventListener('click', (e) => {
     iconContainer.innerHTML = '';
     if (pack === 'project') {
         currentIconPack = 'project';
-        setItemsCount();
     } else {
         currentIconPack = 'fontAwesome';
-        setItemsCount();
     }
+    setItemsCount();
 });
 
 const generateIconNode = (item) => {
@@ -138,6 +137,8 @@ icons.addEventListener('click', (e) => {
         setActiveIcon(icons, e.target.closest('.icon-wrapper').querySelector('.icon'));
         const activeSvgClass = modal.querySelector('span.info-content__cls');
         activeSvgClass.textContent = icons.querySelector('.active div').className;
+
+        console.log('log', icons.querySelector('.active div'), icons.querySelector('.active div').className)
     }
 });
 
@@ -166,7 +167,7 @@ window.onclick = function(event) {
 
 // change pack
 const iconContainerHandler = (e) => {
-    const iconClsPrefix = currentIconPack === 'project' ? 'svg-icon' : 'svg-icon-fa';
+    const iconClsPrefix = currentIconPack === 'project' ? 'svg-icon' : 'svg-fa';
 
     const target = e.target;
     const element = target.closest('li') || target.tagName == 'LI';
@@ -182,6 +183,7 @@ const iconContainerHandler = (e) => {
                 if (nodeEl.firstChild.classList.length === 3) {
                     nodeEl.firstChild.classList.remove([...nodeEl.firstChild.classList].pop());
                 }
+                nodeEl.firstChild.classList.replace(nodeEl.firstChild.classList[0], iconClsPrefix)
                 nodeEl.firstChild.classList.add(`${iconClsPrefix}-${element.querySelector('img').alt}`);
             });
 
@@ -197,7 +199,7 @@ const iconContainerHandler = (e) => {
             e.stopPropagation();
             const clsName = e.target.className;
             const iconAlt = e.target.closest('li').querySelector('img').alt;
-            const iconCls = `svg-icon ${iconClsPrefix}-${iconAlt}`;
+            const iconCls = `${iconClsPrefix} ${iconClsPrefix}-${iconAlt}`;
             navigator.clipboard.writeText(iconCls);
 
             e.target.className = 'svg-icon svg-icon-check';

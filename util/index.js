@@ -23,8 +23,23 @@ generateIconStore(iconStoreFileName, 'InsertIcons', 'svg-icon', projectIcons.ico
 generateIconStore(iconStoreFileName, 'InsertFaIcons', 'svg-fa', faIcons.icons, ICON_TYPES.fa);
 
 // generate html file
+// update icons source -> `../${source}`
+
+const listItems = projectIcons.iconList.map((icon) => {
+    return {
+        ...icon,
+        source: ('../').concat(icon.source)        
+    }
+})
+const faListItems = faIcons.iconList.map((icon) => {
+    return {
+        ...icon,
+        source: ('../').concat(icon.source)
+    }
+})
+
 const compiledFunction = pug.compileFile('doc/pug/index.pug');
-fs.writeFileSync('doc/index.html', compiledFunction({listItems: projectIcons.iconList, faListItems: faIcons.iconList}), 'utf-8', function(err) {
+fs.writeFileSync('doc/index.html', compiledFunction({listItems, faListItems}), 'utf-8', function(err) {
     if (err) {
         return console.log(err);
     };
