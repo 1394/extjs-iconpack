@@ -1,6 +1,8 @@
 Ext.define('Iconpack.modal.Icons', {
     alias: 'class.icons',
 
+    defaultIconName: "add",
+
     constructor() {
         this.callParent();
     },

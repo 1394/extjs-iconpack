@@ -375,7 +375,6 @@ $icon-list: (
   mask-repeat: no-repeat !important;
   mask-position: center !important;
   -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-position: center !important;
   background-color: $base-color;
   color: transparent;
   min-width: 18px;
@@ -386,7 +385,6 @@ $icon-list: (
 mask-repeat: no-repeat !important;
 mask-position: center !important;
 -webkit-mask-repeat: no-repeat !important;
--webkit-mask-position: center !important;
 background-color: $base-color;
 color: transparent;
 min-width: 18px;
@@ -487,4 +485,16 @@ min-height: 18px;
 .svg-icon.svg-icon-disabled {
   background-color: #bbbbbb;
   cursor: default;
+}
+
+.svg-icon-align-left {
+  -webkit-mask-position: left !important;
+}
+
+.svg-icon-align-center {
+  -webkit-mask-position: center !important;
+}
+
+.svg-icon-align-right {
+  -webkit-mask-position: right !important;
 }
