@@ -1491,11 +1491,6 @@ min-height: 18px;
 }
 
 .svg-fa {
-  &.svg-in-grid-cell {
-    width: 20px;
-    height: 20px;
-    background-color: $base-color;
-  }
 
   &.x-tree-icon {
     width: 20px;
@@ -1527,16 +1522,3 @@ min-height: 18px;
 //   background-color: #bbbbbb;
 //   cursor: default;
 // }
-
-.svg-fa {
-  &.svg-in-grid-cell {
-    width: 20px;
-    height: 20px;
-    background-color: $base-color;
-  }
-
-  &.x-tree-icon {
-    width: 20px;
-    height: 20px;
-  }
-}
