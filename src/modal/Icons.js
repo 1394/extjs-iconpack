@@ -1,6 +1,27 @@
 Ext.define('Iconpack.modal.Icons', {
     alias: 'class.icons',
 
+    defaultIconName: 'add',
+    defaultPriority: 'project,fa',
+
+    getAllIcons(priority) {
+        priority = (priority || this.defaultPriority).split(',');
+        let store = [];
+        for (let i = 0; i < priority.length; i++) {
+            switch (priority[i].trim()) {
+                case 'fa':
+                    store = store.concat(this.getFaIcons())
+                    break;
+                case 'project':
+                    store = store.concat(this.getIcons());
+                    break;
+                default:
+                    break;
+            }
+        }
+        return store;
+    },
+
     constructor() {
         this.callParent();
     },

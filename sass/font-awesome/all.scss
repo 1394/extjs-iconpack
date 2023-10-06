@@ -1403,7 +1403,6 @@ $icon-list: (
   mask-repeat: no-repeat !important;
   mask-position: center !important;
   -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-position: center !important;
   background-color: $base-color;
   color: transparent;
   min-width: 18px;
@@ -1414,7 +1413,6 @@ $icon-list: (
 mask-repeat: no-repeat !important;
 mask-position: center !important;
 -webkit-mask-repeat: no-repeat !important;
--webkit-mask-position: center !important;
 background-color: $base-color;
 color: transparent;
 min-width: 18px;
@@ -1493,11 +1491,6 @@ min-height: 18px;
 }
 
 .svg-fa {
-  &.svg-in-grid-cell {
-    width: 20px;
-    height: 20px;
-    background-color: $base-color;
-  }
 
   &.x-tree-icon {
     width: 20px;
@@ -1529,16 +1522,3 @@ min-height: 18px;
 //   background-color: #bbbbbb;
 //   cursor: default;
 // }
-
-.svg-fa {
-  &.svg-in-grid-cell {
-    width: 20px;
-    height: 20px;
-    background-color: $base-color;
-  }
-
-  &.x-tree-icon {
-    width: 20px;
-    height: 20px;
-  }
-}
