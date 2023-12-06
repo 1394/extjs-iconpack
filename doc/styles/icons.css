@@ -21961,6 +21961,20 @@
 .x-edge.sigma .x-tool-maximize {
   background-color: inherit !important;
 }
+
+.sigma .x-tool-restore {
+    mask-image: url(../../resources/font-awesome/restore.svg) !important;
+    -webkit-mask-image: url(../../resources/font-awesome/restore.svg) !important;
+    background-color: white !important;
+}
+.sigma .x-tool-restore:before {
+    content: "";
+}
+
+.x-edge.sigma .x-tool-restore {
+    background-color: inherit !important;
+}
+
 .x-edge .svg-fa {
   background-repeat: no-repeat;
   background-position: center center;
@@ -21969,6 +21983,10 @@
 }
 .x-edge .svg-fa.svg-fa-maximize {
   background-image: url(../../resources/font-awesome/maximize.svg) !important;
+}
+
+.x-edge .svg-fa.svg-fa-restore {
+    background-image: url(../../resources/font-awesome/restore.svg) !important;
 }
 
 .svg-fa-medal {
@@ -42880,6 +42898,26 @@
 .x-edge.sigma .x-tool-maximize {
   background-color: inherit !important;
 }
+
+.svg-icon-restore {
+    mask-image: url(../../resources/images/icon/restore.svg) !important;
+    -webkit-mask-image: url(../../resources/images/icon/restore.svg) !important;
+}
+
+.sigma .x-tool-restore {
+    mask-image: url(../../resources/images/icon/restore.svg) !important;
+    -webkit-mask-image: url(../../resources/images/icon/restore.svg) !important;
+    background-color: white !important;
+}
+.sigma .x-tool-restore:before {
+    content: "";
+}
+
+.x-edge.sigma .x-tool-restore {
+    background-color: inherit !important;
+}
+
+
 .x-edge .svg-icon {
   background-repeat: no-repeat;
   background-position: center center;
@@ -42890,6 +42928,9 @@
   background-image: url(../../resources/images/icon/maximize.svg) !important;
 }
 
+.x-edge .svg-icon.svg-icon-restore {
+    background-image: url(../../resources/images/icon/restore.svg) !important;
+}
 .svg-icon-megaphone-small {
   mask-image: url(../../resources/images/icon/megaphone-small.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/megaphone-small.svg) !important;
