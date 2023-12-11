@@ -2,7 +2,6 @@
   mask-repeat: no-repeat !important;
   mask-position: center !important;
   -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-position: center !important;
   background-color: #1E3B4C;
   color: transparent;
   min-width: 18px;
@@ -13,7 +12,6 @@
   mask-repeat: no-repeat !important;
   mask-position: center !important;
   -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-position: center !important;
   background-color: #1E3B4C;
   color: transparent;
   min-width: 18px;
@@ -21961,20 +21959,6 @@
 .x-edge.sigma .x-tool-maximize {
   background-color: inherit !important;
 }
-
-.sigma .x-tool-restore {
-    mask-image: url(../../resources/font-awesome/restore.svg) !important;
-    -webkit-mask-image: url(../../resources/font-awesome/restore.svg) !important;
-    background-color: white !important;
-}
-.sigma .x-tool-restore:before {
-    content: "";
-}
-
-.x-edge.sigma .x-tool-restore {
-    background-color: inherit !important;
-}
-
 .x-edge .svg-fa {
   background-repeat: no-repeat;
   background-position: center center;
@@ -21983,10 +21967,6 @@
 }
 .x-edge .svg-fa.svg-fa-maximize {
   background-image: url(../../resources/font-awesome/maximize.svg) !important;
-}
-
-.x-edge .svg-fa.svg-fa-restore {
-    background-image: url(../../resources/font-awesome/restore.svg) !important;
 }
 
 .svg-fa-medal {
@@ -27522,6 +27502,33 @@
 }
 .x-edge .svg-fa.svg-fa-republican {
   background-image: url(../../resources/font-awesome/republican.svg) !important;
+}
+
+.svg-fa-restore {
+  mask-image: url(../../resources/font-awesome/restore.svg) !important;
+  -webkit-mask-image: url(../../resources/font-awesome/restore.svg) !important;
+}
+
+.sigma .x-tool-restore {
+  mask-image: url(../../resources/font-awesome/restore.svg) !important;
+  -webkit-mask-image: url(../../resources/font-awesome/restore.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-restore:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-restore {
+  background-color: inherit !important;
+}
+.x-edge .svg-fa {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-fa.svg-fa-restore {
+  background-image: url(../../resources/font-awesome/restore.svg) !important;
 }
 
 .svg-fa-restroom {
@@ -37577,21 +37584,6 @@
   height: 24px;
 }
 
-.svg-fa.svg-in-grid-cell {
-  width: 20px;
-  height: 20px;
-  background-color: #1E3B4C;
-}
-.svg-fa.x-tree-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.svg-fa.svg-in-grid-cell {
-  width: 20px;
-  height: 20px;
-  background-color: #1E3B4C;
-}
 .svg-fa.x-tree-icon {
   width: 20px;
   height: 20px;
@@ -37601,7 +37593,6 @@
   mask-repeat: no-repeat !important;
   mask-position: center !important;
   -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-position: center !important;
   background-color: #1E3B4C;
   color: transparent;
   min-width: 18px;
@@ -37612,7 +37603,6 @@
   mask-repeat: no-repeat !important;
   mask-position: center !important;
   -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-position: center !important;
   background-color: #1E3B4C;
   color: transparent;
   min-width: 18px;
@@ -42395,6 +42385,33 @@
   background-image: url(../../resources/images/icon/increase.svg) !important;
 }
 
+.svg-icon-info {
+  mask-image: url(../../resources/images/icon/info.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/info.svg) !important;
+}
+
+.sigma .x-tool-info {
+  mask-image: url(../../resources/images/icon/info.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/info.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-info:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-info {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-info {
+  background-image: url(../../resources/images/icon/info.svg) !important;
+}
+
 .svg-icon-information {
   mask-image: url(../../resources/images/icon/information.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/information.svg) !important;
@@ -42528,6 +42545,33 @@
 }
 .x-edge .svg-icon.svg-icon-internet-shop {
   background-image: url(../../resources/images/icon/internet-shop.svg) !important;
+}
+
+.svg-icon-item-list {
+  mask-image: url(../../resources/images/icon/item-list.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/item-list.svg) !important;
+}
+
+.sigma .x-tool-item-list {
+  mask-image: url(../../resources/images/icon/item-list.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/item-list.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-item-list:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-item-list {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-item-list {
+  background-image: url(../../resources/images/icon/item-list.svg) !important;
 }
 
 .svg-icon-itp-2 {
@@ -42898,26 +42942,6 @@
 .x-edge.sigma .x-tool-maximize {
   background-color: inherit !important;
 }
-
-.svg-icon-restore {
-    mask-image: url(../../resources/images/icon/restore.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/restore.svg) !important;
-}
-
-.sigma .x-tool-restore {
-    mask-image: url(../../resources/images/icon/restore.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/restore.svg) !important;
-    background-color: white !important;
-}
-.sigma .x-tool-restore:before {
-    content: "";
-}
-
-.x-edge.sigma .x-tool-restore {
-    background-color: inherit !important;
-}
-
-
 .x-edge .svg-icon {
   background-repeat: no-repeat;
   background-position: center center;
@@ -42928,9 +42952,6 @@
   background-image: url(../../resources/images/icon/maximize.svg) !important;
 }
 
-.x-edge .svg-icon.svg-icon-restore {
-    background-image: url(../../resources/images/icon/restore.svg) !important;
-}
 .svg-icon-megaphone-small {
   mask-image: url(../../resources/images/icon/megaphone-small.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/megaphone-small.svg) !important;
@@ -44794,6 +44815,33 @@
   background-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
 }
 
+.svg-icon-restore {
+  mask-image: url(../../resources/images/icon/restore.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/restore.svg) !important;
+}
+
+.sigma .x-tool-restore {
+  mask-image: url(../../resources/images/icon/restore.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/restore.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-restore:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-restore {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-restore {
+  background-image: url(../../resources/images/icon/restore.svg) !important;
+}
+
 .svg-icon-roster {
   mask-image: url(../../resources/images/icon/roster.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/roster.svg) !important;
@@ -45737,6 +45785,33 @@
 }
 .x-edge .svg-icon.svg-icon-steam {
   background-image: url(../../resources/images/icon/steam.svg) !important;
+}
+
+.svg-icon-story {
+  mask-image: url(../../resources/images/icon/story.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/story.svg) !important;
+}
+
+.sigma .x-tool-story {
+  mask-image: url(../../resources/images/icon/story.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/story.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-story:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-story {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-story {
+  background-image: url(../../resources/images/icon/story.svg) !important;
 }
 
 .svg-icon-subsidies {
@@ -47418,6 +47493,18 @@
 .svg-icon.svg-icon-disabled {
   background-color: #bbbbbb;
   cursor: default;
+}
+
+.svg-icon-align-left {
+  -webkit-mask-position: left !important;
+}
+
+.svg-icon-align-center {
+  -webkit-mask-position: center !important;
+}
+
+.svg-icon-align-right {
+  -webkit-mask-position: right !important;
 }
 
 /*# sourceMappingURL=icons.css.map */
