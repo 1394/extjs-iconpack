@@ -3,7 +3,7 @@
 $icon-font-path: get-resource-path('images/icon', 'shared');
 
 $icon-list: (
-    //IconList.start
+  //IconList.start
     "account-circle": "account-circle",
     "accounts-receivable-report": "accounts-receivable-report",
     "accruals": "accruals",
@@ -67,6 +67,7 @@ $icon-list: (
     "clip-action": "clip-action",
     "clip": "clip",
     "close": "close",
+    "closed-period": "closed-period",
     "collaps": "collaps",
     "collapse-top": "collapse-top",
     "comment": "comment",
@@ -226,6 +227,7 @@ $icon-list: (
     "not-done-all": "not-done-all",
     "office": "office",
     "online-store": "online-store",
+    "open-period": "open-period",
     "open": "open",
     "order-small": "order-small",
     "order": "order",
@@ -269,8 +271,8 @@ $icon-list: (
     "report-dz": "report-dz",
     "reports": "reports",
     "report_search": "report_search",
-    "restriction-schedule": "restriction-schedule",
     "restore": "restore",
+    "restriction-schedule": "restriction-schedule",
     "roster": "roster",
     "rules": "rules",
     "sales-books": "sales-books",
@@ -368,7 +370,7 @@ $icon-list: (
     "work-thv": "work-thv",
     "workflow": "workflow",
     "wysiwyg": "wysiwyg",
-    //IconList.end
+  //IconList.end
 );
 
 @mixin svg-icon-mask($color) {
