@@ -39355,6 +39355,33 @@
   background-image: url(../../resources/images/icon/close.svg) !important;
 }
 
+.svg-icon-closed-period {
+  mask-image: url(../../resources/images/icon/closed-period.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/closed-period.svg) !important;
+}
+
+.sigma .x-tool-closed-period {
+  mask-image: url(../../resources/images/icon/closed-period.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/closed-period.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-closed-period:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-closed-period {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-closed-period {
+  background-image: url(../../resources/images/icon/closed-period.svg) !important;
+}
+
 .svg-icon-collaps {
   mask-image: url(../../resources/images/icon/collaps.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/collaps.svg) !important;
@@ -43648,6 +43675,33 @@
   background-image: url(../../resources/images/icon/online-store.svg) !important;
 }
 
+.svg-icon-open-period {
+  mask-image: url(../../resources/images/icon/open-period.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/open-period.svg) !important;
+}
+
+.sigma .x-tool-open-period {
+  mask-image: url(../../resources/images/icon/open-period.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/open-period.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-open-period:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-open-period {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-open-period {
+  background-image: url(../../resources/images/icon/open-period.svg) !important;
+}
+
 .svg-icon-open {
   mask-image: url(../../resources/images/icon/open.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/open.svg) !important;
@@ -44830,33 +44884,6 @@
   background-image: url(../../resources/images/icon/report_search.svg) !important;
 }
 
-.svg-icon-restriction-schedule {
-  mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
-}
-
-.sigma .x-tool-restriction-schedule {
-  mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
-  background-color: white !important;
-}
-.sigma .x-tool-restriction-schedule:before {
-  content: "";
-}
-
-.x-edge.sigma .x-tool-restriction-schedule {
-  background-color: inherit !important;
-}
-.x-edge .svg-icon {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75%;
-  background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-restriction-schedule {
-  background-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
-}
-
 .svg-icon-restore {
   mask-image: url(../../resources/images/icon/restore.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/restore.svg) !important;
@@ -44882,6 +44909,33 @@
 }
 .x-edge .svg-icon.svg-icon-restore {
   background-image: url(../../resources/images/icon/restore.svg) !important;
+}
+
+.svg-icon-restriction-schedule {
+  mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+}
+
+.sigma .x-tool-restriction-schedule {
+  mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-restriction-schedule:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-restriction-schedule {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-restriction-schedule {
+  background-image: url(../../resources/images/icon/restriction-schedule.svg) !important;
 }
 
 .svg-icon-roster {
