@@ -8820,27 +8820,6 @@
   background-image: url(../../resources/font-awesome/closed-captioning.svg) !important;
 }
 
-.svg-icon-closed-period {
-    mask-image: url(../../resources/images/icon/closed-period.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/closed-period.svg) !important;
-}
-
-.sigma .x-tool-closed-period {
-    mask-image: url(../../resources/images/icon/closed-period.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/closed-period.svg) !important;
-    background-color: white !important;
-}
-.sigma .x-tool-closed-period:before {
-    content: "";
-}
-
-.x-edge.sigma .x-tool-closed-period {
-    background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-closed-period {
-    background-image: url(../../resources/images/icon/closed-period.svg) !important;
-}
-
 .svg-fa-cloud-arrow-down {
   mask-image: url(../../resources/font-awesome/cloud-arrow-down.svg) !important;
   -webkit-mask-image: url(../../resources/font-awesome/cloud-arrow-down.svg) !important;
@@ -38977,6 +38956,33 @@
   background-image: url(../../resources/images/icon/cancel.svg) !important;
 }
 
+.svg-icon-case-normal {
+  mask-image: url(../../resources/images/icon/case-normal.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/case-normal.svg) !important;
+}
+
+.sigma .x-tool-case-normal {
+  mask-image: url(../../resources/images/icon/case-normal.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/case-normal.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-case-normal:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-case-normal {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-case-normal {
+  background-image: url(../../resources/images/icon/case-normal.svg) !important;
+}
+
 .svg-icon-change-circle {
   mask-image: url(../../resources/images/icon/change-circle.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/change-circle.svg) !important;
@@ -42920,24 +42926,30 @@
 }
 
 .svg-icon-lowercase {
-    mask-image: url(../../resources/images/icon/lowercase.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/lowercase.svg) !important;
+  mask-image: url(../../resources/images/icon/lowercase.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/lowercase.svg) !important;
 }
 
 .sigma .x-tool-lowercase {
-    mask-image: url(../../resources/images/icon/lowercase.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/lowercase.svg) !important;
-    background-color: white !important;
+  mask-image: url(../../resources/images/icon/lowercase.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/lowercase.svg) !important;
+  background-color: white !important;
 }
 .sigma .x-tool-lowercase:before {
-    content: "";
+  content: "";
 }
 
 .x-edge.sigma .x-tool-lowercase {
-    background-color: inherit !important;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
 }
 .x-edge .svg-icon.svg-icon-lowercase {
-    background-image: url(../../resources/images/icon/lowercase.svg) !important;
+  background-image: url(../../resources/images/icon/lowercase.svg) !important;
 }
 
 .svg-icon-magnifying-glass {
@@ -43748,27 +43760,6 @@
 }
 .x-edge .svg-icon.svg-icon-open {
   background-image: url(../../resources/images/icon/open.svg) !important;
-}
-
-.svg-icon-open-period {
-    mask-image: url(../../resources/images/icon/open-period.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/open-period.svg) !important;
-}
-
-.sigma .x-tool-open-period {
-    mask-image: url(../../resources/images/icon/open-period.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/open-period.svg) !important;
-    background-color: white !important;
-}
-.sigma .x-tool-closed-open:before {
-    content: "";
-}
-
-.x-edge.sigma .x-tool-open-period {
-    background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-open-period {
-    background-image: url(../../resources/images/icon/open-period.svg) !important;
 }
 
 .svg-icon-order-small {
@@ -46877,24 +46868,30 @@
 }
 
 .svg-icon-uppercase {
-    mask-image: url(../../resources/images/icon/uppercase.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/uppercase.svg) !important;
+  mask-image: url(../../resources/images/icon/uppercase.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/uppercase.svg) !important;
 }
 
 .sigma .x-tool-uppercase {
-    mask-image: url(../../resources/images/icon/uppercase.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/uppercase.svg) !important;
-    background-color: white !important;
+  mask-image: url(../../resources/images/icon/uppercase.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/uppercase.svg) !important;
+  background-color: white !important;
 }
 .sigma .x-tool-uppercase:before {
-    content: "";
+  content: "";
 }
 
 .x-edge.sigma .x-tool-uppercase {
-    background-color: inherit !important;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
 }
 .x-edge .svg-icon.svg-icon-uppercase {
-    background-image: url(../../resources/images/icon/uppercase.svg) !important;
+  background-image: url(../../resources/images/icon/uppercase.svg) !important;
 }
 
 .svg-icon-upward-2 {
@@ -47620,27 +47617,6 @@
   content: "" !important;
 }
 
-.svg-icon-case-normal {
-    mask-image: url(../../resources/images/icon/case-normal.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/case-normal.svg) !important;
-}
-
-.sigma .x-tool-case-normal {
-    mask-image: url(../../resources/images/icon/case-normal.svg) !important;
-    -webkit-mask-image: url(../../resources/images/icon/case-normal.svg) !important;
-    background-color: white !important;
-}
-.sigma .x-tool-case-normal:before {
-    content: "";
-}
-
-.x-edge.sigma .x-tool-case-normal {
-    background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-case-normal {
-    background-image: url(../../resources/images/icon/case-normal.svg) !important;
-}
-
 .svg-icon.svg-icon-edit {
   background-color: #3D6780;
 }
@@ -47665,6 +47641,5 @@
 .svg-icon-align-right {
   -webkit-mask-position: right !important;
 }
-
 
 /*# sourceMappingURL=icons.css.map */
