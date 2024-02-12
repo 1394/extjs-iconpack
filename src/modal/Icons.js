@@ -22,10 +22,6 @@ Ext.define('Iconpack.modal.Icons', {
         return store;
     },
 
-    constructor() {
-        this.callParent();
-    },
-
     getIcons() {
         return this.iconsStore;
     },
