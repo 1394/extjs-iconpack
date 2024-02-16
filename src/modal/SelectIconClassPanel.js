@@ -50,7 +50,7 @@ Ext.define('Iconpack.modal.SelectIconClassPanel', {
     ],
 
     initComponent: function() {
-        this.callParent(arguments);
+        this.callParent();
 
         this.iconsStore = Ext.create('class.icons');
 
