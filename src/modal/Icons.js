@@ -223,7 +223,6 @@ Ext.define('Iconpack.modal.Icons', {
         {value: 'svg-icon svg-icon-kit', description: 'kit'},
         {value: 'svg-icon svg-icon-latch', description: 'latch'},
         {value: 'svg-icon svg-icon-less', description: 'less'},
-        {value: 'svg-icon svg-icon-levels', description: 'levels'},
         {value: 'svg-icon svg-icon-library-books', description: 'library-books'},
         {value: 'svg-icon svg-icon-link', description: 'link'},
         {value: 'svg-icon svg-icon-list', description: 'list'},
