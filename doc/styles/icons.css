@@ -40752,9 +40752,28 @@
   content: "";
 }
 
+.svg-icon-email-send {
+    mask-image: url(../../resources/images/icon/email-send.svg) !important;
+    -webkit-mask-image: url(../../resources/images/icon/email-send.svg) !important;
+}
+
+.sigma .x-tool-email-send {
+    mask-image: url(../../resources/images/icon/email-send.svg) !important;
+    -webkit-mask-image: url(../../resources/images/icon/email-send.svg) !important;
+    background-color: white !important;
+}
+.sigma .x-tool-email-send:before {
+    content: "";
+}
+
 .x-edge.sigma .x-tool-email {
   background-color: inherit !important;
 }
+
+.x-edge.sigma .x-tool-email-send {
+    background-color: inherit !important;
+}
+
 .x-edge .svg-icon {
   background-repeat: no-repeat;
   background-position: center center;
@@ -40763,6 +40782,10 @@
 }
 .x-edge .svg-icon.svg-icon-email {
   background-image: url(../../resources/images/icon/email.svg) !important;
+}
+
+.x-edge .svg-icon.svg-icon-email-send {
+    background-image: url(../../resources/images/icon/email-send.svg) !important;
 }
 
 .svg-icon-enlarge {
@@ -44842,33 +44865,6 @@
   background-image: url(../../resources/images/icon/report-dz.svg) !important;
 }
 
-.svg-icon-reports {
-  mask-image: url(../../resources/images/icon/reports.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/reports.svg) !important;
-}
-
-.sigma .x-tool-reports {
-  mask-image: url(../../resources/images/icon/reports.svg) !important;
-  -webkit-mask-image: url(../../resources/images/icon/reports.svg) !important;
-  background-color: white !important;
-}
-.sigma .x-tool-reports:before {
-  content: "";
-}
-
-.x-edge.sigma .x-tool-reports {
-  background-color: inherit !important;
-}
-.x-edge .svg-icon {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 75%;
-  background-color: inherit !important;
-}
-.x-edge .svg-icon.svg-icon-reports {
-  background-image: url(../../resources/images/icon/reports.svg) !important;
-}
-
 .svg-icon-report_search {
   mask-image: url(../../resources/images/icon/report_search.svg) !important;
   -webkit-mask-image: url(../../resources/images/icon/report_search.svg) !important;
@@ -44894,6 +44890,33 @@
 }
 .x-edge .svg-icon.svg-icon-report_search {
   background-image: url(../../resources/images/icon/report_search.svg) !important;
+}
+
+.svg-icon-reports {
+  mask-image: url(../../resources/images/icon/reports.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/reports.svg) !important;
+}
+
+.sigma .x-tool-reports {
+  mask-image: url(../../resources/images/icon/reports.svg) !important;
+  -webkit-mask-image: url(../../resources/images/icon/reports.svg) !important;
+  background-color: white !important;
+}
+.sigma .x-tool-reports:before {
+  content: "";
+}
+
+.x-edge.sigma .x-tool-reports {
+  background-color: inherit !important;
+}
+.x-edge .svg-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 75%;
+  background-color: inherit !important;
+}
+.x-edge .svg-icon.svg-icon-reports {
+  background-image: url(../../resources/images/icon/reports.svg) !important;
 }
 
 .svg-icon-restore {

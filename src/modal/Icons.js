@@ -147,6 +147,7 @@ Ext.define('Iconpack.modal.Icons', {
         {value: 'svg-icon svg-icon-edit-user', description: 'edit-user'},
         {value: 'svg-icon svg-icon-edit-view', description: 'edit-view'},
         {value: 'svg-icon svg-icon-edit', description: 'edit'},
+        {value: 'svg-icon svg-icon-email-send', description: 'email-send'},
         {value: 'svg-icon svg-icon-email', description: 'email'},
         {value: 'svg-icon svg-icon-enlarge', description: 'enlarge'},
         {value: 'svg-icon svg-icon-entering-readings-uute', description: 'entering-readings-uute'},
